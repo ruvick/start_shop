@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Каталог корневой"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page page-template">
+
+			<div class="page__header">
+				<div class="page__container">
+
+					<nav class="breadcrumbs">
+						<ul class="breadcrumbs__list">
+							<li class="breadcrumbs__item">
+								<a href="home.html" class="breadcrumbs__link">Главная</a>
+							</li>
+							<li class="breadcrumbs__item">
+								<span class="breadcrumbs__current">Каталог</span>
+							</li>
+						</ul>
+					</nav>
+
+					<div class="page__title-block title-block">
+						<div class="title-block__title">
+							<h1>Каталог</h1>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<section class="template">
+				<div class="__container">
+
+					<div class="template__catalog-root catalog-root">
+						<div class="catalog-root__inner">
+
+							<div class="catalog-root__column">
+								<a href="catalog-main.html" class="catalog-root__card card-catalog">
+									<div class="card-catalog__img _ibg">
+										<img src="img/catalog/01.jpg" loading="lazy" alt="Картинка">
+									</div>
+									<div class="card-catalog__descp">
+										Кровля, фасад, забор
+									</div>
+								</a>
+							</div>
+
+							<div class="catalog-root__column">
+								<a href="catalog-main.html" class="catalog-root__card card-catalog">
+									<div class="card-catalog__img _ibg">
+										<img src="img/catalog/02.jpg" loading="lazy" alt="Картинка">
+									</div>
+									<div class="card-catalog__descp">
+										Керамическая плитка
+									</div>
+								</a>
+							</div>
+
+							<div class="catalog-root__column">
+								<a href="catalog-main.html" class="catalog-root__card card-catalog">
+									<div class="card-catalog__img _ibg">
+										<img src="img/catalog/03.jpg" loading="lazy" alt="Картинка">
+									</div>
+									<div class="card-catalog__descp">
+										Межкомнатные двери
+									</div>
+								</a>
+							</div>
+
+							<div class="catalog-root__column">
+								<a href="catalog-main.html" class="catalog-root__card card-catalog">
+									<div class="card-catalog__img _ibg">
+										<img src="img/catalog/04.jpg" loading="lazy" alt="Картинка">
+									</div>
+									<div class="card-catalog__descp">
+										Напольные покрытия
+									</div>
+								</a>
+							</div>
+
+							<div class="catalog-root__column">
+								<a href="catalog-main.html" class="catalog-root__card card-catalog">
+									<div class="card-catalog__img _ibg">
+										<img src="img/catalog/05.jpg" loading="lazy" alt="Картинка">
+									</div>
+									<div class="card-catalog__descp">
+										Стеновые покрытия
+									</div>
+								</a>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+			</section>
+
+			@@include('html/components/_order-call.htm',{})
+
+		</main>
+		@@include('html/_footer.htm',{})
+		@@include('sprite.svg',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

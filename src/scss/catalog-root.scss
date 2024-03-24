@@ -1,0 +1,82 @@
+.template {
+
+	&__catalog-root {
+	}
+}
+.catalog-root {
+
+	&__inner {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 rem(-10);
+		@media (max-width: 414px){
+			justify-content: space-around;
+			margin: 0;
+		}
+	}
+
+	&__column {
+		display: flex;
+		// flex: 0 1 11%;
+		flex: 0 1 rem(148);
+		padding: 0px 5px 10px 5px;
+		@media (max-width: 768px){
+			flex: 0 1 20%;
+		}
+		@media (max-width: 630px){
+			  flex: 0 1 33.333%;
+		}
+		@media (max-width: 414px){
+			flex: 0 1 rem(108);
+		}
+	}
+
+	&__card {
+
+	}
+}
+.card-catalog {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	flex: 0 1 100%;
+	overflow: hidden;
+	transition: $mainTransition;
+	&__img {
+		width: 100%;
+		// flex: 1 1 auto;
+		padding-bottom: 100%;
+		border-radius: rem(3);
+		overflow: hidden;
+		transition: $mainTransition;
+		background: rgba(240, 242, 248, 1);
+		&:not(:last-child){
+			margin-bottom: rem(10);
+		}
+	}
+
+	&__descp {
+		font-size: rem(16);
+		font-weight: 400;
+		line-height: math.div(22, 16);
+		text-align: center;
+		transition: $mainTransition;
+		@media (max-width: 414px){
+			  font-size: rem(12);
+		}
+	}
+}
+
+.card-catalog {
+	@media (any-hover: hover) {
+		&:hover {
+			.card-catalog__img {
+				transform: scale(1.05);
+			}
+			.card-catalog__descp {
+				color: $blueColor;
+			}
+	}
+	}
+}
+

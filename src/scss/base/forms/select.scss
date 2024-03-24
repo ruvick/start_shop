@@ -1,0 +1,152 @@
+// <SELECT>
+// Снипет (HTML): sel
+.select {
+	position: relative;
+	// .select__body
+	&__body {
+		position: relative; 
+	}
+	// .select__title
+	&__title {
+		color: inherit;
+		text-align: left;
+		border: rem(1) solid #d9d9d9;
+		background-color: #fff;
+		cursor: pointer;
+		width: 100%;
+		border-radius: rem(4);
+		background: rgba(2, 0, 32, 0.03); 
+	}
+	&__content {
+		font-size: rem(16);
+		font-weight: 400;
+		line-height: math.div(22, 16);
+		letter-spacing: 0em;
+	}
+	// .select__value
+	&__value {
+		display: flex;
+		align-items: center;
+		height: rem(30);
+		justify-content: space-between;
+		flex-direction: row-reverse;
+		height: rem(50);
+		padding: rem(14) rem(20) rem(14) rem(15);
+		border-radius: rem(3);
+		&:before {
+			align-self: stretch;
+			flex: 0 0 rem(10);
+			transition: all 0.3s ease 0s;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			content: "\e903";
+			font-family: "icons";
+			font-style: normal;
+			font-weight: normal;
+			font-variant: normal;
+			text-transform: none;
+			line-height: 1;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+			._select-open & {
+				transform: rotate(-180deg);
+			}
+		}
+	}
+	// .select__text
+	&__text {
+		flex: 1 1 auto;
+	}
+	&__input {
+		width: 100%;
+		background-color: transparent;
+		height: 100%;
+	}
+	// .select__options
+	&__options {
+		color: $mainColor;
+		position: absolute;
+		min-width: 100%;
+		left: 0;
+		background-color: #fff;
+		top: rem(55);
+		border-radius: rem(3);
+		background: linear-gradient(0deg, rgba(2, 0, 32, 0.03), rgba(2, 0, 32, 0.03)),
+		linear-gradient(0deg, #FFFFFF, #FFFFFF);
+		border: rem(1) solid rgba(2, 0, 32, 0.03);
+		padding: 0;
+		max-height: rem(204);
+		overflow: auto;
+	}
+	// .select__scroll
+	&__scroll {
+		overflow-y: auto;
+		overflow-x: hidden;
+		// Максимальная высота
+		max-height: rem(200);
+		// Стили скроллбара
+		.simplebar-scrollbar {
+			&::before {
+				//opacity: 1;
+			}
+		}
+	}
+	// .select__option
+	&__option {
+		width: 100%;
+		display: block;
+		text-align: left;
+		cursor: pointer;
+		padding: rem(10) rem(15);
+		color: inherit;
+		&._select-selected {
+			background-color: #eee;
+		}
+		@media (any-hover: hover) {
+			&:hover {
+				background: rgba(2, 0, 32, 0.03);
+			}
+		}
+	}
+
+	// Конструкция дополнительных данных
+	&__row {
+		display: inline-flex;
+		align-items: center;
+	}
+	&__asset {
+	}
+	&__text {
+	}
+
+	// Состояния селекта
+	&._select-open {
+		z-index: 5;
+	}
+	&._select-disabled {
+	}
+	&._select-active {
+	}
+	&._select-focus {
+	}
+	&._select-multiple {
+	}
+	&._select-checkbox {
+	}
+}
+
+// Тег
+._select-tag {
+	cursor: pointer;
+}
+
+.select__options::-webkit-scrollbar {
+	overflow-y: scroll;
+	width: rem(3);
+	background: #fff;
+}
+
+.select__options::-webkit-scrollbar-thumb {
+	background: rgba(2, 0, 32, 0.3);
+}

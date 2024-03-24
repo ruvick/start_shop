@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Личный кабинет - Личные данные"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page page-template page-personal">
+
+			<div class="page__header">
+				<div class="page__container">
+
+					<nav class="breadcrumbs">
+						<ul class="breadcrumbs__list">
+							<li class="breadcrumbs__item">
+								<a href="home.html" class="breadcrumbs__link">Главная</a>
+							</li>
+							<li class="breadcrumbs__item">
+								<span class="breadcrumbs__current">Личный
+									кабинет</span>
+							</li>
+						</ul>
+					</nav>
+
+					<div class="page__title-block title-block">
+						<div class="title-block__title">
+							<h1>Личный кабинет</h1>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<section class="page__template template">
+				<div class="template__container">
+
+					<div class="template__main main-template">
+
+						<sidebar class="main-template__sidebar sidebar-template">
+							<div class="sidebar-template__body">
+								<div class="personal-navigation">
+									<div class="personal-navigation__header header-personal-navigation">
+										<div class="header-personal-navigation__title">Личный кабинет</div>
+										<button type="button" class="header-personal-navigation__btn _icon-close"></button>
+									</div>
+									<nav class="tabs__navigation">
+										<a href="personal-data.html" class="tabs__title _icon-arrow-big-right _tab-active">Личные
+											данные</a>
+										<a href="current-orders.html" class="tabs__title _icon-arrow-big-right">Текущие заказы</a>
+										<a href="no-orders.html" class="tabs__title _icon-arrow-big-right">Нет заказов</a>
+										<a href="order-history.html" class="tabs__title _icon-arrow-big-right">История заказов</a>
+										<a href="change-password.html" class="tabs__title _icon-arrow-big-right">Сменить
+											пароль</a>
+										<a href="" class="tabs__title tabs__title_link">Выйти</a>
+									</nav>
+								</div>
+							</div>
+						</sidebar>
+
+						<div class="main-template__body">
+							<div class="personal-content">
+
+								<div class="personal-content__inner">
+
+									<div class="personal-content__column">
+
+										<div class="personal-content__item item-personal">
+											<div class="item-personal__header">
+												<div class="item-personal__title">Контактные данные</div>
+												<div class="item-personal__buttons">
+													<button type="button" data-popup="#personal-data"
+														class="item-personal__btn _icon-edit"></button>
+												</div>
+											</div>
+											<div class="item-personal__body">
+												<form action="#" class="item-personal__form form-personal">
+													<div class="form__line">
+														<div class="form-personal__input Input">
+															<input name="form[]" autocomplete="off" type="text" id="input"
+																class="Input-text tel" placeholder=" " data-error="Заполните поле"
+																data-required data-validate>
+															<div class="cut"></div>
+															<label for="input" class="Input-label">Номер телефона</label>
+															<span class="Input__check _icon-check"></span>
+														</div>
+														<div class="form-personal__input Input">
+															<input name="form[]" autocomplete="off" type="text" id="input"
+																class="Input-text" placeholder=" " data-error="Заполните поле"
+																data-required data-validate>
+															<div class="cut"></div>
+															<label for="input" class="Input-label">Email</label>
+															<span class="Input__check _icon-check"></span>
+														</div>
+													</div>
+												</form>
+											</div>
+										</div>
+
+										<div class="personal-content__item item-personal">
+											<div class="item-personal__header">
+												<div class="item-personal__title">Личные данные</div>
+												<div class="item-personal__buttons">
+													<button type="button" data-popup="#personal-data"
+														class="item-personal__btn _icon-edit"></button>
+												</div>
+											</div>
+											<div class="item-personal__body">
+												<form action="#" class="item-personal__form form-personal">
+													<div class="form__line">
+														<div class="form-personal__input Input">
+															<input name="form[]" autocomplete="off" type="text" id="input"
+																class="Input-text" placeholder=" " data-error="Заполните поле"
+																data-required data-validate>
+															<div class="cut"></div>
+															<label for="input" class="Input-label">Фамилия</label>
+															<span class="Input__check _icon-check"></span>
+														</div>
+														<div class="form-personal__input Input">
+															<input name="form[]" autocomplete="off" type="text" id="input"
+																class="Input-text" placeholder=" " data-error="Заполните поле"
+																data-required data-validate>
+															<div class="cut"></div>
+															<label for="input" class="Input-label">Имя</label>
+															<span class="Input__check _icon-check"></span>
+														</div>
+														<div class="form-personal__input Input">
+															<input name="form[]" autocomplete="off" type="text" id="input"
+																class="Input-text" placeholder=" " data-error="Заполните поле"
+																data-required data-validate>
+															<div class="cut"></div>
+															<label for="input" class="Input-label">Отчество</label>
+															<span class="Input__check _icon-check"></span>
+														</div>
+													</div>
+												</form>
+											</div>
+										</div>
+
+									</div>
+
+									<div class="personal-content__column">
+
+										<div class="personal-content__item item-personal">
+											<div class="item-personal__header header-personal">
+												<div class="item-personal__title">Адреса доставки</div>
+												<div class="header-personal__item header-personal__item_adress">
+													<div class="item-personal__subtitle">Барнаул, улица Ленина, 2</div>
+													<div class="item-personal__buttons">
+														<button type="button" data-popup="#personal-data"
+															class="item-personal__btn _icon-edit"></button>
+														<button type="clear" class="item-personal__btn _icon-cart"></button>
+													</div>
+												</div>
+											</div>
+											<div class="item-personal__body body-personal">
+												<div class="body-personal__item">
+													<button type="button"
+														class="body-personal__btn btn btn_light _icon-location">Добавить
+														новый адрес</button>
+												</div>
+											</div>
+										</div>
+
+									</div>
+
+								</div>
+
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+			</section>
+
+			@@include('html/components/_order-call.htm',{})
+
+		</main>
+		@@include('html/_footer.htm',{})
+		@@include('sprite.svg',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

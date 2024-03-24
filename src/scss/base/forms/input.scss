@@ -1,0 +1,289 @@
+//<INPUT>
+// Снипет (HTML): inp
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	&:focus {
+		outline: none;
+	}
+}
+.input {
+	display: flex;
+	width: 100%;
+	height: rem(50);
+	// padding: 0px 39px 0 15px;
+	border-radius: rem(3);
+	background: rgba(2, 0, 32, 0.03);
+
+	&._focus {
+		background: grey;
+	}
+
+	&._error {
+		border: 1px solid red;
+	}
+}
+
+.form__error {
+	display: block;
+	font-size: rem(12);
+	font-weight: 400;
+	line-height: math.div(15, 12);
+	letter-spacing: 0em;
+	color: $redColor;
+	margin-top: rem(5);
+}
+
+.input {
+	position: relative;
+	overflow: hidden;
+	&__label {
+		position: absolute;    
+		top: 50%;                       
+		left: rem(15);
+		transform: translate(0, -50%);
+		// left: 20px;
+		// z-index: -1;
+	}
+	textarea,
+	input {
+		width: 100%;
+		padding: 0px rem(39) 0 rem(15);
+		background-color: transparent;
+	}
+	.input__viewpass {
+		position: absolute;
+		right: rem(13);
+		top: 50%;                     
+		transform: translate(0, -50%);
+		color: rgba(2, 0, 32, 0.3);
+		font-size: rem(20);
+		background: transparent;
+	}
+}
+
+.input._form-focus .input__label {
+	top: 5%;
+	transform: translate(0, 0);
+	font-size: rem(12);
+	color: #8f8e8e;
+}
+
+.input._form-focus._form-error .input__label {
+	top: rem(16);
+	font-size: inherit;
+	color: #ea2838;
+}
+
+.input-file {
+	
+}
+.input-file__label {
+font-size: rem(14);
+line-height: rem(18);
+letter-spacing: 0em;
+	color: $blueColor;
+	cursor: pointer;
+}
+.input-file__upload {
+	display: flex;
+	align-items: center;
+&::before{
+	margin-top: rem(-2);
+	margin-right: rem(5);
+}
+}
+
+#myfile {
+	display: none;
+}
+
+.search-form__check {
+   position: absolute;    
+   top: 50%;                       
+	right: rem(15);
+   transform: translate(0, -50%);
+	color: $greenColor;
+	font-size: rem(20);
+}
+
+input {
+	// width: 100%;
+	background: transparent;
+}
+
+textarea.input {
+	resize: none;
+	padding: rem(5) rem(10);
+	width: 100%;
+}
+
+// Описываем focus label, подписи поля или блок
+// .form__line._focus .form__label {
+// 	background: red;
+// }
+
+// // Описываем ошибку label, подписи поля или блок
+// .form__line._error .form__label {
+// 	color: red;
+// }
+
+// Стилизация placeholder 
+::-webkit-input-placeholder {
+	transition: $mainTransition;
+	color: rgba(2, 0, 32, 0.3);
+}
+
+::-moz-placeholder {
+	transition: $mainTransition;
+	color: rgba(2, 0, 32, 0.3);
+}
+
+/* Firefox 19+ */
+:-moz-placeholder {
+	transition: $mainTransition;
+	color: rgba(2, 0, 32, 0.3);
+}
+
+/* Firefox 18- */
+:-ms-input-placeholder {
+	transition: $mainTransition;
+	color: rgba(2, 0, 32, 0.3);
+}
+
+// Убираем стрелки у цифрового инпута
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	/* display: none; <- Crashes Chrome on hover */
+	-webkit-appearance: none;
+	margin: 0;
+	/* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=radio] {
+	position: absolute;
+	width: 0;
+	height: 0;
+	opacity: 0;
+	left: 0;
+	top: 0;
+	visibility: hidden;
+}
+//========================================================================================================================================================
+
+.Input {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+ }
+
+ .Input .input__viewpass {
+	position: absolute;
+	right: 0.8125rem;
+	top: 50%;
+	transform: translate(0, -50%);
+	color: rgba(2, 0, 32, 0.3);
+	font-size: 1.25rem;
+	background: transparent;
+}
+
+.Input._form-error {
+	.Input__check {
+		opacity: 0;
+		visibility: hidden;
+	}
+}
+.Input__check {
+	position: absolute;
+	right: rem(15);
+	top: 50%;
+	transform: translate(0, -50%);
+	color: rgba(0, 191, 54, 1);
+	font-size: rem(16);
+	background: transparent;
+	opacity: 0;
+	visibility: hidden;
+	// &._active{
+	// 	opacity: 1;
+	// 	visibility: visible;
+	// }
+}
+
+._check-focus .Input__check {
+	opacity: 1;
+	visibility: visible;
+}
+//========================================================================================================================================================
+
+// New input 
+.Input-text {
+	display: block;
+	margin: 0;
+	padding: 0px rem(39) 0 rem(15);
+	color: inherit;
+	width: 100%;
+	font-family: inherit;
+	font-size: rem(16);
+	font-weight: inherit;
+	border: none;
+	color: $mainColor;
+	border-radius: rem(3);
+	transition: $mainTransition;
+	height: rem(50);
+	border-radius: rem(3);
+	background: rgba(2, 0, 32, 0.03);
+ }
+
+.cut {
+	position: absolute;
+	top: rem(-3);
+	left: rem(20);
+	transform: translateY(0);
+	transition: transform 200ms;
+ }
+ 
+ .cut-short {
+	width: rem(50);
+ }
+ 
+ .Input-label {
+	color: #65657b;
+	left: rem(20);
+	// font-size: 12px;
+	line-height: rem(14);
+	pointer-events: none;
+	position: absolute;
+	transform-origin: 0 50%;
+	transition: transform 200ms, color 200ms;
+	top: rem(20);
+	span {
+		color: $redColor;
+	}
+ }
+ 
+ .Input-text:focus ~ .cut,
+ .Input-text:not(:placeholder-shown) ~ .cut {
+	transform: translateY(8px);
+ }
+
+ .Input-text:focus ~ .Input-label,
+ .Input-text:not(:placeholder-shown) ~ .Input-label {
+	transform: translateY(-15px) translateX(-5px) scale(0.65);
+ }
+ 
+ .Input-text:not(:placeholder-shown) ~ .Input-label {
+	// color: #808097;
+ }
+ 
+ .Input-text:focus ~ .Input-label {
+	// color: #dc2f55;
+ }
+
+
+ 
+
+ 

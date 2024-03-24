@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Поиск не найдено"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page page-template">
+
+			<div class="page__header">
+				<div class="page__container">
+
+					<nav class="breadcrumbs">
+						<ul class="breadcrumbs__list">
+							<li class="breadcrumbs__item">
+								<a href="home.html" class="breadcrumbs__link">Главная</a>
+							</li>
+							<li class="breadcrumbs__item">
+								<span class="breadcrumbs__current">Результаты
+									поиска</span>
+							</li>
+						</ul>
+					</nav>
+
+					<!-- <div class="page__title-block title-block">
+						<div class="title-block__title">
+							<h1>Поиск не найдено</h1>
+						</div>
+					</div> -->
+
+				</div>
+			</div>
+
+			<section class="template">
+				<div class="__container">
+
+					<div class="template__empty empty-template">
+
+						<div class="empty-template__body">
+							<div class="empty-template__image" style="background-image: url(../img/template/search.png);">
+							</div>
+							<div class="empty-template__title">
+								<h2>По вашему запросу ничего не найдено</h2>
+							</div>
+							<div class="empty-template__subtitle">По запросу "gcfvgmf" ничего не найдено. Попробуйте изменить
+								запрос или поискать товар вручную
+							</div>
+							<a href="catalog.html" class="empty-template__link btn">Перейти в каталог</a>
+						</div>
+
+					</div>
+
+				</div>
+			</section>
+
+			@@include('html/components/_order-call.htm',{})
+
+		</main>
+		@@include('html/_footer.htm',{})
+		@@include('sprite.svg',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

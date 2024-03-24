@@ -1,0 +1,134 @@
+.options {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+
+	// .options__item
+	&__item {
+		position: relative;
+		cursor: pointer;
+
+		&._error {}
+	}
+
+	// .options__input
+	&__input {
+		position: absolute;
+		width: 0;
+		height: 0;
+		opacity: 0;
+		left: 0;
+		top: 0;
+		visibility: hidden;
+
+		&:checked+.options__text {
+			// background: #F3F3F4;
+			// border: 1px solid #F3F3F4;
+		}
+		&:checked+.options__text:before {
+			border: 5px solid $blueColor;
+		}
+
+		&:checked+.options__text:after {
+			// transform: scale(1);
+		}
+	}
+
+	// .options__text
+	&__text {
+		display: flex;
+		flex-direction: row-reverse;
+    justify-content: space-between;
+		align-items: center;
+		position: relative;
+		font-size: rem(16);
+		line-height: calc(22 / 16);
+
+		&:before {
+			content: "";
+			align-self: flex-start;
+			// margin: 0px 14px 0px 0px;
+			flex: 0 0 rem(20);
+			left: 0;
+			top: 0;
+			border-radius: 50%;
+			width: rem(20);
+			height: rem(20);
+			background: transparent;
+			border: rem(1) solid #0200204D;
+		}
+
+		&:after {
+			content: "";
+			transition: all 0.3s ease 0s;
+			transform: scale(0);
+			width: rem(12);
+			height: rem(12);
+			border-radius: 50%;
+			background-color: #161615;
+			position: absolute;
+			right: 7%;
+			// top: 5px;
+		}
+	}
+}
+
+// .options {
+// 	display: flex;
+// 	flex-direction: column;
+// 	align-items: flex-start;
+// 	// .options__item
+// 	&__item {
+// 		position: relative;
+// 		cursor: pointer;
+// 		&:not(:last-child) {
+// 			margin-bottom: em(5); 
+// 		}
+// 	}
+// 	// .options__input
+// 	&__input {
+// 		width: 0;
+// 		height: 0;
+// 		opacity: 0;
+// 		position: absolute;
+// 		&:focus + .options__label:before {
+// 			box-shadow: 0 0 5px #000;
+// 		}
+// 		&:checked + .options__label:before {
+// 		}
+// 		&:checked + .options__label:after {
+// 			transform: scale(1);
+// 		}
+// 	}
+// 	// .options__label
+// 	&__label {
+// 		display: inline-flex;
+// 		align-items: center;
+// 		cursor: pointer;
+// 		gap: 10px;
+// 		&:before {
+// 			content: "";
+// 			align-self: flex-start;
+// 			width: 20px;
+// 			height: 20px;
+// 			flex: 0 0 20px;
+// 			border-radius: 50%;
+// 			border: 1px solid #a7a9ac;
+// 		}
+// 		&:after {
+// 			content: "";
+// 			transition: all 0.3s ease 0s;
+// 			transform: scale(0);
+// 			width: 10px;
+// 			height: 10px;
+// 			border-radius: 50%;
+// 			background-color: #77243a;
+// 			position: absolute;
+// 			left: 5px;
+// 			top: 5px;
+// 		}
+// 	}
+// 	// .options__text
+// 	&__text {
+// 	}
+// }

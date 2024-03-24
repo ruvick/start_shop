@@ -1,0 +1,56 @@
+.page__ui-kit	{
+	padding: rem(50) 0 rem(100) 0;
+	// background: #c8cbd178;
+}
+
+.ui-kit__inner {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.ui-kit__col {
+	flex: 0 1 50%;
+	padding: 0 rem(20);
+	margin-bottom: rem(65);
+	// border: 1px solid #000;
+	border-radius: rem(3);
+}
+
+// Заголовки
+.ui-kit__title {
+	font-size: rem(48);
+	font-weight: 500;
+	margin-bottom: rem(35);
+}
+
+.ui-kit__inner {
+	h1, h2, h3, h4 {
+		margin-bottom: rem(25);
+	}
+}
+
+.ui-kit__row {
+	display: flex;
+	align-items: start;
+	flex-wrap: wrap;
+	margin-bottom: rem(15);
+	.btn, button, a {
+		margin-right: rem(10);
+		margin-bottom: rem(15);
+	}
+}
+
+.ui-kit__row {
+	.dropdown-list {
+		margin-right: rem(15);
+		margin-bottom: rem(25);
+	}
+	.options__item {
+		margin-bottom: rem(10);
+	}
+}
+//========================================================================================================================================================
+
+.ui-kit__col_fw {
+	flex: 0 1 100%;
+}

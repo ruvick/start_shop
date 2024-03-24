@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"UI-KIT"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+
+			<div class="page__header">
+				<div class="page__container">
+
+					<nav class="breadcrumbs">
+						<ul class="breadcrumbs__list">
+							<li class="breadcrumbs__item">
+								<a href="home.html" class="breadcrumbs__link">Главная</a>
+							</li>
+							<li class="breadcrumbs__item">
+								<span class="breadcrumbs__current">UI-KIT</span>
+							</li>
+						</ul>
+					</nav>
+
+					<div class="page__title-block title-block">
+						<div class="title-block__title">
+							<h1>UI-KIT</h1>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<section class="page__ui-kit ui-kit">
+				<div class="__container">
+
+					<div class="ui-kit__inner">
+
+						<div class="ui-kit__col">
+							<div class="ui-kit__title">Typography</div>
+							<h1>Заголовок h1</h1>
+							<h2>Заголовок h2</h2>
+							<h3>Заголовок h3</h3>
+							<h4>Заголовок h2</h4>
+						</div>
+
+						<div class="ui-kit__col">
+							<div class="ui-kit__title">Кнопки</div>
+							<div class="ui-kit__row">
+
+								<button type="button" class="catalog-btn btn">
+									<span type="button" class="icon-menu">
+										<span></span>
+										<span></span>
+										<span></span>
+									</span>
+									<span class="catalog-btn__text">Каталог</span>
+								</button>
+								<button type="button" class="catalog-btn btn">
+									<span type="button" class="icon-menu">
+										<span></span>
+										<span></span>
+										<span></span>
+									</span>
+								</button>
+								<button type="button" class="btn _icon-baskcet">В корзину</button>
+								<button type="button" class="btn fw _red _icon-check">В корзине</button>
+								<button type="button" class="btn _icon-calculator">Secondary</button>
+								<button type="button" class="btn btn_light _icon-calculator">Secondary</button>
+								<button type="button" class="btn">Смотреть коллекцию</button>
+								<button type="button" class="btn btn_light">Сообщить о поступлении</button>
+								<button type="button" class="btn fw">Смотреть коллекцию</button>
+
+								<div class="ui-kit__row">
+									<a href="" class="action-btn _icon-user">Войти</a>
+									<a href="" class="action-btn _icon-favorite">Избранное <span>0</span></a>
+									<a href="" class="action-btn _icon-baskcet">Корзина <span>0</span></a>
+								</div>
+
+								<div class="ui-kit__row">
+									<button type="button" class="arrow-sl-btn _icon-arrow-sl-left"></button>
+									<button type="button" class="arrow-sl-btn _icon-arrow-sl-right"></button>
+									<button type="button" class="arrow-btn _icon-arrow-sl-left"></button>
+									<button type="button" class="arrow-btn _icon-arrow-sl-right"></button>
+								</div>
+
+							</div>
+						</div>
+
+						<div class="ui-kit__col">
+							<div class="ui-kit__title">Inputs</div>
+
+							<div class="search-form">
+								<form action="#" class="search-form__item">
+									<input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+										placeholder="Найти материалы" data-value="Найти материалы" class="search-form__input">
+									<button type="reset"
+										class="search-form__btn search-form__btn_reset _icon-close _active"></button>
+									<button type="submit" class="search-form__btn _icon-search"></button>
+								</form>
+							</div>
+
+							<br>
+
+							<form action="#" class="form">
+								<div class="form__line">
+
+									<div class="form__input input">
+										<label for="name-inp" class="input__label">Имя</label>
+										<input id="name-inp" type="text" name="name" data-validate data-required="name">
+										<span class="search-form__check _icon-check"></span>
+									</div>
+
+									<div class="Input">
+										<input type="text" id="input" class="Input-text" placeholder="Имя">
+										<label for="input" class="Input-label">Имя</label>
+									</div>
+
+								</div>
+
+							</form>
+
+						</div>
+
+						<div class="ui-kit__col">
+							<div class="ui-kit__title">Selects</div>
+
+							<select name="form[]" class="form">
+								<option value="1" selected="selected">15 дней</option>
+								<option value="2">20 дней</option>
+								<option value="3">25 дней</option>
+								<option value="4">1 месяца</option>
+								<option value="5">2 месяца</option>
+								<option value="6">3 месяца</option>
+								<option value="7">4 месяца</option>
+								<option value="8">5 месяца</option>
+							</select>
+
+						</div>
+
+						<div class="ui-kit__col">
+							<div class="ui-kit__title">Tabs</div>
+
+							<div data-tabs class="tabs">
+								<nav data-tabs-titles class="tabs__navigation">
+									<button type="button" class="tabs__title _icon-arrow-big-right _tab-active">Личные
+										данные</button>
+									<button type="button" class="tabs__title _icon-arrow-big-right">Текущие заказы</button>
+									<button type="button" class="tabs__title _icon-arrow-big-right">История заказов</button>
+									<button type="button" class="tabs__title _icon-arrow-big-right">Сменить пароль</button>
+									<button type="button" class="tabs__title _icon-arrow-big-right">Выйти</button>
+								</nav>
+								<div data-tabs-body class="tabs__content">
+									<div class="tabs__body">
+										Содержимое первого таба
+									</div>
+									<div class="tabs__body">
+										Содержимое второго таба
+									</div>
+									<div class="tabs__body">
+										Содержимое третьего таба
+									</div>
+									<div class="tabs__body">
+										Содержимое Четвертого таба
+									</div>
+									<div class="tabs__body">
+										Содержимое Пятого таба
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="ui-kit__col">
+							<div class="ui-kit__title">Categories-Nav</div>
+							<div class="ui-kit__row">
+								<button type="button" class="cat-nav-btn _icon-arrow-big-left">Для ванной
+									<span>64</span></button>
+								<button type="button" class="cat-nav-btn _active _icon-arrow-big-left">Для ванной
+									<span>64</span></button>
+							</div>
+						</div>
+
+						<div class="ui-kit__col">
+							<div class="ui-kit__title">Quantity</div>
+							<div class="ui-kit__row">
+
+								<div class="quantity">
+									<div class="quantity__button quantity__button_minus"></div>
+									<div class="quantity__input">
+										<input autocomplete="off" type="number" name="form[]" value="1">
+									</div>
+									<div class="quantity__button quantity__button_plus"></div>
+								</div>
+
+							</div>
+						</div>
+
+						<div class="ui-kit__col">
+							<div class="ui-kit__title">Stickers</div>
+							<div class="ui-kit__row">
+
+								<div class="sticker-block">
+									<span class="sticker _dark-blue">Новинка</span>
+									<span class="sticker _red">-25%</span>
+									<span class="sticker _green">Хит</span>
+									<span class="availability-card _color-green">· В наличии
+									</span>
+									<span class="availability-card _color-red">· Нет в наличии
+									</span>
+									<span class="new-price-card rub">276</span>
+									<span class="old-price-card rub">300</span>
+									<span class="size-product-card">1285х192х8 мм</span>
+								</div>
+
+							</div>
+						</div>
+
+						<div class="ui-kit__col">
+							<div class="ui-kit__title">Checkbox</div>
+
+							<div class="ui-kit__row">
+
+								<div class="switch-block">
+									<input type="checkbox" id="toggle" class="switch-block__input" />
+									<label for="toggle" class="switch-block__label"></label>
+								</div>
+
+							</div>
+
+							<div class="ui-kit__row">
+
+								<div class="options">
+									<label class="options__item">
+										<input class="options__input" checked type="radio" value="1" name="form[option]">
+										<span class="options__text"></span>
+									</label>
+									<label class="options__item">
+										<input class="options__input" type="radio" value="2" name="form[option]">
+										<span class="options__text"></span>
+									</label>
+									<label class="options__item">
+										<input class="options__input" type="radio" value="3" name="form[option]">
+										<span class="options__text"></span>
+									</label>
+								</div>
+
+							</div>
+
+							<div class="ui-kit__row">
+
+								<label for="check" class="checkbox">
+									<input id="check" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1"
+										name="form[]">
+									<span class="checkbox__text">
+									</span>
+								</label>
+
+							</div>
+
+						</div>
+
+						<div class="ui-kit__col">
+							<div class="ui-kit__title">Dropdown</div>
+							<div class="ui-kit__row">
+
+								<ul class="dropdown-list">
+									<li class="dropdown-list__item">
+										<a href="#" class="dropdown-list__link">Сайдинг корабельный брус</a>
+									</li>
+									<li class="dropdown-list__item">
+										<a href="#" class="dropdown-list__link">Сайдинг блок хаус</a>
+									</li>
+									<li class="dropdown-list__item">
+										<a href="#" class="dropdown-list__link">Фасадные панели</a>
+									</li>
+									<li class="dropdown-list__item">
+										<a href="#" class="dropdown-list__link">Металлочерепица</a>
+									</li>
+									<li class="dropdown-list__item">
+										<a href="#" class="dropdown-list__link">Профнастил</a>
+									</li>
+									<li class="dropdown-list__item">
+										<a href="#" class="dropdown-list__link">Профиль</a>
+									</li>
+									<li class="dropdown-list__item">
+										<a href="#" class="dropdown-list__link">Утеплитель</a>
+									</li>
+									<li class="dropdown-list__item">
+										<a href="#" class="dropdown-list__link">Водосточные системы</a>
+									</li>
+								</ul>
+
+								<ul class="dropdown-list _secondary">
+									<li class="dropdown-list__item">
+										<a href="#" class="dropdown-list__link">Сайдинг корабельный брус</a>
+									</li>
+									<li class="dropdown-list__item">
+										<a href="#" class="dropdown-list__link">Сайдинг блок хаус</a>
+									</li>
+									<li class="dropdown-list__item">
+										<a href="#" class="dropdown-list__link">Фасадные панели</a>
+									</li>
+									<li class="dropdown-list__item">
+										<a href="#" class="dropdown-list__link">Металлочерепица</a>
+									</li>
+									<li class="dropdown-list__item">
+										<a href="#" class="dropdown-list__link">Профнастил</a>
+									</li>
+									<li class="dropdown-list__item">
+										<a href="#" class="dropdown-list__link">Профиль</a>
+									</li>
+									<li class="dropdown-list__item">
+										<a href="#" class="dropdown-list__link">Утеплитель</a>
+									</li>
+									<li class="dropdown-list__item">
+										<a href="#" class="dropdown-list__link">Водосточные системы</a>
+									</li>
+								</ul>
+
+							</div>
+
+						</div>
+
+
+
+					</div>
+
+					<div class="ui-kit__col ui-kit__col_fw">
+						<div class="ui-kit__title">Product-card-block</div>
+						<!-- <div class="ui-kit__row"> -->
+
+						<div class="flex__inner">
+
+							<div class="flex__column">
+
+								<div class="card-product">
+									<div class="card-product__image image-card-product swiper">
+										<div class="image-card-product__stikcers-block sticker-block">
+											<span class="sticker _dark-blue">Новинка</span>
+											<span class="sticker _red">-25%</span>
+											<span class="sticker _green">Хит</span>
+										</div>
+										<div class="image-card-product__icons icons-card-product">
+											<button type="button"
+												class="icons-card-product__icon icon-card-product _icon-favorite"></button>
+											<button type="button"
+												class="icons-card-product__icon icon-card-product _icon-search-plus"></button>
+										</div>
+										<div class="swiper-wrapper">
+											<div class="slider-card-product__slide swiper-slide _ibg">
+												<img src="img/card-product/01.jpg" loading="lazy" alt="Картинка">
+											</div>
+											<div class="slider-card-product__slide swiper-slide _ibg">
+												<img src="img/card-product/01.jpg" loading="lazy" alt="Картинка">
+											</div>
+											<div class="slider-card-product__slide swiper-slide _ibg">
+												<img src="img/card-product/01.jpg" loading="lazy" alt="Картинка">
+											</div>
+										</div>
+										<div class="image-card-product__dotts"></div>
+									</div>
+									<div class="card-product__body body-card-product">
+										<div class="body-card-product__row">
+											<div class="body-card-product__item availability-card _color-green">· В наличии
+											</div>
+											<div class="body-card-product__item article-card">Арт: 5546885</div>
+										</div>
+										<div class="body-card-product__title">
+											Сайдинг ДАЧНЫЙ Classic Color Цикорий, CLASSIC COLOR Ромашка
+										</div>
+										<div class="body-card-product__size size-product-card"><span>1285х192х8 мм</span></div>
+										<div class="body-card-product__price price-card-product">
+											<div class="price-card-product__name">Цена за штуку</div>
+											<div class="price-card-product__row">
+												<div class="price-card-product__new-price new-price-card rub">276</div>
+												<div class="price-card-product__old-price old-price-card rub">300</div>
+											</div>
+										</div>
+									</div>
+									<div class="card-product__actions actions-card-product">
+										<div class="actions-card-product__bascket-action">
+											<div class="actions-card-product__quantity quantity">
+												<div class="quantity__button quantity__button_minus"></div>
+												<div class="quantity__input">
+													<input autocomplete="off" type="number" name="form[]" value="1">
+												</div>
+												<div class="quantity__button quantity__button_plus"></div>
+											</div>
+											<button type="button" class="actions-card-product__btn-bascket btn _icon-baskcet">В
+												корзину</button>
+										</div>
+										<!-- <div class="actions-card-product__btn">Сообщить о поступлении</div> -->
+									</div>
+								</div>
+
+							</div>
+
+							<div class="flex__column">
+
+								<div class="card-product">
+									<div class="card-product__image image-card-product swiper">
+										<div class="image-card-product__stikcers-block sticker-block">
+											<span class="sticker _dark-blue">Новинка</span>
+											<span class="sticker _red">-25%</span>
+											<span class="sticker _green">Хит</span>
+										</div>
+										<div class="image-card-product__icons icons-card-product">
+											<button type="button"
+												class="icons-card-product__icon icon-card-product _icon-favorite"></button>
+											<button type="button"
+												class="icons-card-product__icon icon-card-product _icon-search-plus"></button>
+										</div>
+										<div class="swiper-wrapper">
+											<div class="slider-card-product__slide swiper-slide _ibg">
+												<img src="img/card-product/01.jpg" loading="lazy" alt="Картинка">
+											</div>
+											<div class="slider-card-product__slide swiper-slide _ibg">
+												<img src="img/card-product/01.jpg" loading="lazy" alt="Картинка">
+											</div>
+											<div class="slider-card-product__slide swiper-slide _ibg">
+												<img src="img/card-product/01.jpg" loading="lazy" alt="Картинка">
+											</div>
+										</div>
+										<div class="image-card-product__dotts"></div>
+									</div>
+									<div class="card-product__body body-card-product">
+										<div class="body-card-product__row">
+											<div class="body-card-product__item availability-card _color-red">· Нет в налчиии
+											</div>
+											<div class="body-card-product__item article-card">Арт: 5546885</div>
+										</div>
+										<div class="body-card-product__title">
+											Сайдинг ДАЧНЫЙ Classic Color Цикорий, CLASSIC COLOR Ромашка
+										</div>
+										<div class="body-card-product__size size-product-card"><span>1285х192х8 мм</span></div>
+										<div class="body-card-product__price price-card-product">
+											<div class="price-card-product__name">Цена за штуку</div>
+											<div class="price-card-product__row">
+												<div class="price-card-product__new-price new-price-card rub">276</div>
+												<div class="price-card-product__old-price old-price-card rub">300</div>
+											</div>
+										</div>
+									</div>
+									<div class="card-product__actions actions-card-product">
+										<!-- <div class="actions-card-product__bascket-action">
+											<div class="actions-card-product__quantity quantity">
+												<div class="quantity__button quantity__button_minus"></div>
+												<div class="quantity__input">
+													<input autocomplete="off" type="number" name="form[]" value="1">
+												</div>
+												<div class="quantity__button quantity__button_plus"></div>
+											</div>
+											<button type="button" class="actions-card-product__btn-bascket btn _icon-baskcet">В
+												корзину</button>
+										</div> -->
+										<button type="button" class="actions-card-product__btn btn btn_light">Сообщить о
+											поступлении</button>
+									</div>
+								</div>
+
+							</div>
+
+							<div class="flex__column">
+
+								<div class="card-product">
+									<div class="card-product__image image-card-product swiper">
+										<div class="image-card-product__stikcers-block sticker-block">
+											<span class="sticker _dark-blue">Новинка</span>
+											<span class="sticker _red">-25%</span>
+											<span class="sticker _green">Хит</span>
+										</div>
+										<div class="image-card-product__icons icons-card-product">
+											<button type="button"
+												class="icons-card-product__icon icon-card-product _icon-favorite"></button>
+											<button type="button"
+												class="icons-card-product__icon icon-card-product _icon-search-plus"></button>
+										</div>
+										<div class="swiper-wrapper">
+											<div class="slider-card-product__slide swiper-slide _ibg">
+												<img src="img/card-product/01.jpg" loading="lazy" alt="Картинка">
+											</div>
+											<div class="slider-card-product__slide swiper-slide _ibg">
+												<img src="img/card-product/01.jpg" loading="lazy" alt="Картинка">
+											</div>
+											<div class="slider-card-product__slide swiper-slide _ibg">
+												<img src="img/card-product/01.jpg" loading="lazy" alt="Картинка">
+											</div>
+										</div>
+										<div class="image-card-product__dotts"></div>
+									</div>
+									<div class="card-product__body body-card-product">
+										<div class="body-card-product__row">
+											<!-- <div class="body-card-product__item availability-card _color-red">· Нет в налчиии
+											</div> -->
+											<div class="body-card-product__item article-card">Арт: 5546885</div>
+										</div>
+										<div class="body-card-product__title">
+											Сайдинг ДАЧНЫЙ Classic Color Цикорий, CLASSIC COLOR Ромашка
+										</div>
+										<div class="body-card-product__size size-product-card"><span>1285х192х8 мм</span></div>
+										<div class="body-card-product__price price-card-product">
+											<div class="price-card-product__name">Цена за штуку</div>
+											<div class="price-card-product__row">
+												<div class="price-card-product__new-price new-price-card rub">276</div>
+												<div class="price-card-product__old-price old-price-card rub">300</div>
+											</div>
+										</div>
+									</div>
+									<div class="card-product__actions actions-card-product">
+										<!-- <div class="actions-card-product__bascket-action">
+											<div class="actions-card-product__quantity quantity">
+												<div class="quantity__button quantity__button_minus"></div>
+												<div class="quantity__input">
+													<input autocomplete="off" type="number" name="form[]" value="1">
+												</div>
+												<div class="quantity__button quantity__button_plus"></div>
+											</div>
+											<button type="button" class="actions-card-product__btn-bascket btn _icon-baskcet">В
+												корзину</button>
+										</div> -->
+										<button type="button" class="actions-card-product__btn btn">Смотреть коллекцию</button>
+									</div>
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
+
+					<div class="ui-kit__col ui-kit__col_fw">
+						<div class="ui-kit__title">Product-cards-block</div>
+
+						<div class="product-cards-block">
+
+							<div class="product-cards-block__navigation-panel navigation-panel-product">
+								<div class="navigation-panel-product__title">Новинки</div>
+								<div class="navigation-panel-product__actions">
+									<a href="#" class="navigation-panel-product__link">Смотреть все</a>
+									<div class="navigation-panel-product__arrow-block arrow-block-navigation">
+										<button type="button" class="arrow-sl-btn arrow-sl-btn_next _icon-arrow-sl-left"></button>
+										<button type="button"
+											class="arrow-sl-btn arrow-sl-btn_prev _icon-arrow-sl-right"></button>
+									</div>
+								</div>
+							</div>
+
+							<div class="product-cards-block__slider slider-cards-block swiper">
+								<div class="swiper-wrapper">
+
+									<div class="swiper-slide">
+
+										<div class="card-product">
+											<div class="card-product__image image-card-product swiper">
+												<div class="image-card-product__stikcers-block sticker-block">
+													<span class="sticker _red">-25%</span>
+												</div>
+												<div class="image-card-product__icons icons-card-product">
+													<button type="button"
+														class="icons-card-product__icon icon-card-product _icon-favorite"></button>
+													<button type="button"
+														class="icons-card-product__icon icon-card-product _icon-search-plus"></button>
+												</div>
+												<div class="swiper-wrapper">
+													<div class="slider-card-product__slide swiper-slide _ibg">
+														<img src="img/card-product/01.jpg" loading="lazy" alt="Картинка">
+													</div>
+													<div class="slider-card-product__slide swiper-slide _ibg">
+														<img src="img/card-product/02.jpg" loading="lazy" alt="Картинка">
+													</div>
+													<div class="slider-card-product__slide swiper-slide _ibg">
+														<img src="img/card-product/01.jpg" loading="lazy" alt="Картинка">
+													</div>
+												</div>
+												<div class="image-card-product__dotts"></div>
+											</div>
+											<div class="card-product__body body-card-product">
+												<div class="body-card-product__row">
+													<div class="body-card-product__item availability-card _color-green">· В наличии
+													</div>
+													<div class="body-card-product__item article-card">Арт: 5546885</div>
+												</div>
+												<div class="body-card-product__title">
+													Сайдинг ДАЧНЫЙ Classic Color Цикорий, CLASSIC COLOR Ромашка
+												</div>
+												<div class="body-card-product__size size-product-card"><span>1285х192х8 мм</span>
+												</div>
+												<div class="body-card-product__price price-card-product">
+													<div class="price-card-product__name">Цена за штуку</div>
+													<div class="price-card-product__row">
+														<div class="price-card-product__new-price new-price-card rub">276</div>
+														<div class="price-card-product__old-price old-price-card rub">300</div>
+													</div>
+												</div>
+											</div>
+											<div class="card-product__actions actions-card-product">
+												<div class="actions-card-product__bascket-action">
+													<div class="actions-card-product__quantity quantity">
+														<div class="quantity__button quantity__button_minus"></div>
+														<div class="quantity__input">
+															<input autocomplete="off" type="number" name="form[]" value="1">
+														</div>
+														<div class="quantity__button quantity__button_plus"></div>
+													</div>
+													<button type="button"
+														class="actions-card-product__btn-bascket btn _icon-baskcet">В
+														корзину</button>
+												</div>
+												<!-- <div class="actions-card-product__btn">Сообщить о поступлении</div> -->
+											</div>
+										</div>
+
+									</div>
+
+									<div class="swiper-slide">
+
+										<div class="card-product">
+											<div class="card-product__image image-card-product swiper">
+												<div class="image-card-product__stikcers-block sticker-block">
+													<span class="sticker _green">Хит</span>
+												</div>
+												<div class="image-card-product__icons icons-card-product">
+													<button type="button"
+														class="icons-card-product__icon icon-card-product _icon-favorite"></button>
+													<button type="button"
+														class="icons-card-product__icon icon-card-product _icon-search-plus"></button>
+												</div>
+												<div class="swiper-wrapper">
+													<div class="slider-card-product__slide swiper-slide _ibg">
+														<img src="img/card-product/02.jpg" loading="lazy" alt="Картинка">
+													</div>
+													<div class="slider-card-product__slide swiper-slide _ibg">
+														<img src="img/card-product/01.jpg" loading="lazy" alt="Картинка">
+													</div>
+													<div class="slider-card-product__slide swiper-slide _ibg">
+														<img src="img/card-product/02.jpg" loading="lazy" alt="Картинка">
+													</div>
+												</div>
+												<div class="image-card-product__dotts"></div>
+											</div>
+											<div class="card-product__body body-card-product">
+												<div class="body-card-product__row">
+													<div class="body-card-product__item availability-card _color-red">· Нет в налчиии
+													</div>
+													<div class="body-card-product__item article-card">Арт: 5546885</div>
+												</div>
+												<div class="body-card-product__title">
+													Сайдинг ДАЧНЫЙ Classic Color Цикорий, CLASSIC COLOR Ромашка
+												</div>
+												<div class="body-card-product__size size-product-card"><span>1285х192х8 мм</span>
+												</div>
+												<div class="body-card-product__price price-card-product">
+													<div class="price-card-product__name">Цена за штуку</div>
+													<div class="price-card-product__row">
+														<div class="price-card-product__new-price new-price-card rub">276</div>
+														<div class="price-card-product__old-price old-price-card rub">300</div>
+													</div>
+												</div>
+											</div>
+											<div class="card-product__actions actions-card-product">
+												<!-- <div class="actions-card-product__bascket-action">
+													<div class="actions-card-product__quantity quantity">
+														<div class="quantity__button quantity__button_minus"></div>
+														<div class="quantity__input">
+															<input autocomplete="off" type="number" name="form[]" value="1">
+														</div>
+														<div class="quantity__button quantity__button_plus"></div>
+													</div>
+													<button type="button" class="actions-card-product__btn-bascket btn _icon-baskcet">В
+														корзину</button>
+												</div> -->
+												<button type="button" class="actions-card-product__btn btn btn_light">Сообщить о
+													поступлении</button>
+											</div>
+										</div>
+
+									</div>
+
+									<div class="swiper-slide">
+
+										<div class="card-product">
+											<div class="card-product__image image-card-product swiper">
+												<div class="image-card-product__stikcers-block sticker-block">
+													<span class="sticker _dark-blue">Новинка</span>
+												</div>
+												<div class="image-card-product__icons icons-card-product">
+													<button type="button"
+														class="icons-card-product__icon icon-card-product _icon-favorite"></button>
+													<button type="button"
+														class="icons-card-product__icon icon-card-product _icon-search-plus"></button>
+												</div>
+												<div class="swiper-wrapper">
+													<div class="slider-card-product__slide swiper-slide _ibg">
+														<img src="img/card-product/01.jpg" loading="lazy" alt="Картинка">
+													</div>
+													<div class="slider-card-product__slide swiper-slide _ibg">
+														<img src="img/card-product/01.jpg" loading="lazy" alt="Картинка">
+													</div>
+													<div class="slider-card-product__slide swiper-slide _ibg">
+														<img src="img/card-product/01.jpg" loading="lazy" alt="Картинка">
+													</div>
+												</div>
+												<div class="image-card-product__dotts"></div>
+											</div>
+											<div class="card-product__body body-card-product">
+												<div class="body-card-product__row">
+													<!-- <div class="body-card-product__item availability-card _color-red">· Нет в налчиии
+													</div> -->
+													<div class="body-card-product__item article-card">Арт: 5546885</div>
+												</div>
+												<div class="body-card-product__title">
+													Сайдинг ДАЧНЫЙ Classic Color Цикорий, CLASSIC COLOR Ромашка
+												</div>
+												<div class="body-card-product__size size-product-card"><span>1285х192х8 мм</span>
+												</div>
+												<div class="body-card-product__price price-card-product">
+													<div class="price-card-product__name">Цена за штуку</div>
+													<div class="price-card-product__row">
+														<div class="price-card-product__new-price new-price-card rub">276</div>
+														<div class="price-card-product__old-price old-price-card rub">300</div>
+													</div>
+												</div>
+											</div>
+											<div class="card-product__actions actions-card-product">
+												<!-- <div class="actions-card-product__bascket-action">
+													<div class="actions-card-product__quantity quantity">
+														<div class="quantity__button quantity__button_minus"></div>
+														<div class="quantity__input">
+															<input autocomplete="off" type="number" name="form[]" value="1">
+														</div>
+														<div class="quantity__button quantity__button_plus"></div>
+													</div>
+													<button type="button" class="actions-card-product__btn-bascket btn _icon-baskcet">В
+														корзину</button>
+												</div> -->
+												<button type="button" class="actions-card-product__btn btn">Смотреть
+													коллекцию</button>
+											</div>
+										</div>
+
+									</div>
+
+									<div class="swiper-slide">
+
+										<div class="card-product">
+											<div class="card-product__image image-card-product swiper">
+												<div class="image-card-product__stikcers-block sticker-block">
+													<span class="sticker _dark-blue">Новинка</span>
+													<span class="sticker _red">-25%</span>
+													<span class="sticker _green">Хит</span>
+												</div>
+												<div class="image-card-product__icons icons-card-product">
+													<button type="button"
+														class="icons-card-product__icon icon-card-product _icon-favorite"></button>
+													<button type="button"
+														class="icons-card-product__icon icon-card-product _icon-search-plus"></button>
+												</div>
+												<div class="swiper-wrapper">
+													<div class="slider-card-product__slide swiper-slide _ibg">
+														<img src="img/card-product/01.jpg" loading="lazy" alt="Картинка">
+													</div>
+													<div class="slider-card-product__slide swiper-slide _ibg">
+														<img src="img/card-product/01.jpg" loading="lazy" alt="Картинка">
+													</div>
+													<div class="slider-card-product__slide swiper-slide _ibg">
+														<img src="img/card-product/01.jpg" loading="lazy" alt="Картинка">
+													</div>
+												</div>
+												<div class="image-card-product__dotts"></div>
+											</div>
+											<div class="card-product__body body-card-product">
+												<div class="body-card-product__row">
+													<div class="body-card-product__item availability-card _color-green">· В наличии
+													</div>
+													<div class="body-card-product__item article-card">Арт: 5546885</div>
+												</div>
+												<div class="body-card-product__title">
+													Сайдинг ДАЧНЫЙ Classic Color Цикорий, CLASSIC COLOR Ромашка
+												</div>
+												<div class="body-card-product__size size-product-card"><span>1285х192х8 мм</span>
+												</div>
+												<div class="body-card-product__price price-card-product">
+													<div class="price-card-product__name">Цена за штуку</div>
+													<div class="price-card-product__row">
+														<div class="price-card-product__new-price new-price-card rub">276</div>
+														<div class="price-card-product__old-price old-price-card rub">300</div>
+													</div>
+												</div>
+											</div>
+											<div class="card-product__actions actions-card-product">
+												<div class="actions-card-product__bascket-action">
+													<div class="actions-card-product__quantity quantity">
+														<div class="quantity__button quantity__button_minus"></div>
+														<div class="quantity__input">
+															<input autocomplete="off" type="number" name="form[]" value="1">
+														</div>
+														<div class="quantity__button quantity__button_plus"></div>
+													</div>
+													<button type="button"
+														class="actions-card-product__btn-bascket btn _icon-baskcet">В
+														корзину</button>
+												</div>
+												<!-- <div class="actions-card-product__btn">Сообщить о поступлении</div> -->
+											</div>
+										</div>
+
+									</div>
+
+									<div class="swiper-slide">
+
+										<div class="card-product">
+											<div class="card-product__image image-card-product swiper">
+												<div class="image-card-product__stikcers-block sticker-block">
+													<span class="sticker _dark-blue">Новинка</span>
+													<span class="sticker _red">-25%</span>
+													<span class="sticker _green">Хит</span>
+												</div>
+												<div class="image-card-product__icons icons-card-product">
+													<button type="button"
+														class="icons-card-product__icon icon-card-product _icon-favorite"></button>
+													<button type="button"
+														class="icons-card-product__icon icon-card-product _icon-search-plus"></button>
+												</div>
+												<div class="swiper-wrapper">
+													<div class="slider-card-product__slide swiper-slide _ibg">
+														<img src="img/card-product/02.jpg" loading="lazy" alt="Картинка">
+													</div>
+													<div class="slider-card-product__slide swiper-slide _ibg">
+														<img src="img/card-product/01.jpg" loading="lazy" alt="Картинка">
+													</div>
+													<div class="slider-card-product__slide swiper-slide _ibg">
+														<img src="img/card-product/01.jpg" loading="lazy" alt="Картинка">
+													</div>
+												</div>
+												<div class="image-card-product__dotts"></div>
+											</div>
+											<div class="card-product__body body-card-product">
+												<div class="body-card-product__row">
+													<div class="body-card-product__item availability-card _color-red">· Нет в налчиии
+													</div>
+													<div class="body-card-product__item article-card">Арт: 5546885</div>
+												</div>
+												<div class="body-card-product__title">
+													Сайдинг ДАЧНЫЙ Classic Color Цикорий, CLASSIC COLOR Ромашка
+												</div>
+												<div class="body-card-product__size size-product-card"><span>1285х192х8 мм</span>
+												</div>
+												<div class="body-card-product__price price-card-product">
+													<div class="price-card-product__name">Цена за штуку</div>
+													<div class="price-card-product__row">
+														<div class="price-card-product__new-price new-price-card rub">276</div>
+														<div class="price-card-product__old-price old-price-card rub">300</div>
+													</div>
+												</div>
+											</div>
+											<div class="card-product__actions actions-card-product">
+												<!-- <div class="actions-card-product__bascket-action">
+													<div class="actions-card-product__quantity quantity">
+														<div class="quantity__button quantity__button_minus"></div>
+														<div class="quantity__input">
+															<input autocomplete="off" type="number" name="form[]" value="1">
+														</div>
+														<div class="quantity__button quantity__button_plus"></div>
+													</div>
+													<button type="button" class="actions-card-product__btn-bascket btn _icon-baskcet">В
+														корзину</button>
+												</div> -->
+												<button type="button" class="actions-card-product__btn btn btn_light">Сообщить о
+													поступлении</button>
+											</div>
+										</div>
+
+									</div>
+
+									<div class="swiper-slide">
+
+										<div class="card-product">
+											<div class="card-product__image image-card-product swiper">
+												<div class="image-card-product__stikcers-block sticker-block">
+													<span class="sticker _dark-blue">Новинка</span>
+													<span class="sticker _red">-25%</span>
+													<span class="sticker _green">Хит</span>
+												</div>
+												<div class="image-card-product__icons icons-card-product">
+													<button type="button"
+														class="icons-card-product__icon icon-card-product _icon-favorite"></button>
+													<button type="button"
+														class="icons-card-product__icon icon-card-product _icon-search-plus"></button>
+												</div>
+												<div class="swiper-wrapper">
+													<div class="slider-card-product__slide swiper-slide _ibg">
+														<img src="img/card-product/02.jpg" loading="lazy" alt="Картинка">
+													</div>
+													<div class="slider-card-product__slide swiper-slide _ibg">
+														<img src="img/card-product/01.jpg" loading="lazy" alt="Картинка">
+													</div>
+													<div class="slider-card-product__slide swiper-slide _ibg">
+														<img src="img/card-product/02.jpg" loading="lazy" alt="Картинка">
+													</div>
+												</div>
+												<div class="image-card-product__dotts"></div>
+											</div>
+											<div class="card-product__body body-card-product">
+												<div class="body-card-product__row">
+													<!-- <div class="body-card-product__item availability-card _color-red">· Нет в налчиии
+													</div> -->
+													<div class="body-card-product__item article-card">Арт: 5546885</div>
+												</div>
+												<div class="body-card-product__title">
+													Сайдинг ДАЧНЫЙ Classic Color Цикорий, CLASSIC COLOR Ромашка
+												</div>
+												<div class="body-card-product__size size-product-card"><span>1285х192х8 мм</span>
+												</div>
+												<div class="body-card-product__price price-card-product">
+													<div class="price-card-product__name">Цена за штуку</div>
+													<div class="price-card-product__row">
+														<div class="price-card-product__new-price new-price-card rub">276</div>
+														<div class="price-card-product__old-price old-price-card rub">300</div>
+													</div>
+												</div>
+											</div>
+											<div class="card-product__actions actions-card-product">
+												<!-- <div class="actions-card-product__bascket-action">
+													<div class="actions-card-product__quantity quantity">
+														<div class="quantity__button quantity__button_minus"></div>
+														<div class="quantity__input">
+															<input autocomplete="off" type="number" name="form[]" value="1">
+														</div>
+														<div class="quantity__button quantity__button_plus"></div>
+													</div>
+													<button type="button" class="actions-card-product__btn-bascket btn _icon-baskcet">В
+														корзину</button>
+												</div> -->
+												<button type="button" class="actions-card-product__btn btn">Смотреть
+													коллекцию</button>
+											</div>
+										</div>
+
+									</div>
+
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+			</section>
+
+		</main>
+		@@include('html/_footer.htm',{})
+		@@include('sprite.svg',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

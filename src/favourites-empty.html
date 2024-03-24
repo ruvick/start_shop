@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Избранное пусто"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page page-template">
+
+			<div class="page__header">
+				<div class="page__container">
+
+					<nav class="breadcrumbs">
+						<ul class="breadcrumbs__list">
+							<li class="breadcrumbs__item">
+								<a href="home.html" class="breadcrumbs__link">Главная</a>
+							</li>
+							<li class="breadcrumbs__item">
+								<span class="breadcrumbs__current">Избранное</span>
+							</li>
+						</ul>
+					</nav>
+
+					<div class="page__title-block title-block">
+						<div class="title-block__title">
+							<h1>Избранное</h1>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<section class="template">
+				<div class="__container">
+
+					<div class="template__empty empty-template">
+
+						<div class="empty-template__body">
+							<div class="empty-template__image" style="background-image: url(../img/template/favourite.png);">
+							</div>
+							<div class="empty-template__title">
+								<h2>В избранном пока нет товаров</h2>
+							</div>
+							<div class="empty-template__subtitle">Вы можете добавлять понравившиеся товары с помощью иконки
+								<span class="_icon-favorite"></span>
+							</div>
+							<a href="home.html" class="empty-template__link btn">Перейти на главную</a>
+						</div>
+
+					</div>
+
+				</div>
+			</section>
+
+			@@include('html/components/_order-call.htm',{})
+
+		</main>
+		@@include('html/_footer.htm',{})
+		@@include('sprite.svg',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

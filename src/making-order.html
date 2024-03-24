@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Оофрмление заказа"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page page-template">
+
+			<div class="page__header">
+				<div class="page__container">
+
+					<nav class="breadcrumbs">
+						<ul class="breadcrumbs__list">
+							<li class="breadcrumbs__item">
+								<a href="home.html" class="breadcrumbs__link">Главная</a>
+							</li>
+							<li class="breadcrumbs__item">
+								<a href="home.html" class="breadcrumbs__link">Корзина</a>
+							</li>
+							<li class="breadcrumbs__item">
+								<span class="breadcrumbs__current">Оформление заказа</span>
+							</li>
+						</ul>
+					</nav>
+
+					<div class="page__title-block title-block">
+						<div class="title-block__title">
+							<h1>Оформление заказа</h1>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<section class="page__template template">
+				<div class="template__container">
+
+					<div class="template__main main-template">
+
+						<div class="main-template__body">
+
+							<form action="#" class="making-order">
+
+								<div class="making-order__products-order products-order">
+									<div class="products-order__body body-orders">
+
+										<div data-spollers class="body-orders__information information-orders">
+											<button data-spoller type="button"
+												class="information-orders__title _icon-arrow-down">Товары в заказе</button>
+											<div class="information-orders__body">
+
+												<div class="products-order__cards-order-detail cards-order-detail">
+
+													<div class="cards-order-detail__items">
+
+														<div class="cards-order-detail__item item-card-order">
+															<div class="item-card-order__main">
+																<div class="item-card-order__img">
+																	<img src="img/card-product/03.jpg" loading="lazy" alt="Картинка">
+																</div>
+																<div class="item-card-order__descp">
+																	<div class="item-card-order__descp-header">
+																		<div class="item-card-order__article article-card">Арт: 5546885
+																		</div>
+																		<div class="item-card-order__title">ГЕКСАЦЕМЕНТ (Ласселсбергер)
+																		</div>
+																	</div>
+																	<div class="item-card-order__descp-bottom">
+																		<div class="item-card-order__price">Цена за штуку<span>1 039
+																				р</span></div>
+																	</div>
+																</div>
+															</div>
+															<div class="item-card-order__total">
+																<div class="item-card-order__total-quantity">1 шт</div>
+																<div class="item-card-order__total-price new-price-card">1 039 р</div>
+																<!-- <div class="item-card-order__total-price-old old-price-card">300 р</div> -->
+															</div>
+														</div>
+
+														<div class="cards-order-detail__item item-card-order">
+															<div class="item-card-order__main">
+																<div class="item-card-order__img">
+																	<img src="img/card-product/03.jpg" loading="lazy" alt="Картинка">
+																</div>
+																<div class="item-card-order__descp">
+																	<div class="item-card-order__descp-header">
+																		<div class="item-card-order__article article-card">Арт: 5546885
+																		</div>
+																		<div class="item-card-order__title">ГЕКСАЦЕМЕНТ (Ласселсбергер)
+																		</div>
+																	</div>
+																	<div class="item-card-order__descp-bottom">
+																		<div class="item-card-order__price">Цена за штуку<span>1 039
+																				р</span></div>
+																	</div>
+																</div>
+															</div>
+															<div class="item-card-order__total">
+																<div class="item-card-order__total-quantity">1 шт</div>
+																<div class="item-card-order__total-price new-price-card">1 039 р</div>
+																<!-- <div class="item-card-order__total-price-old old-price-card">300 р</div> -->
+															</div>
+														</div>
+													</div>
+
+												</div>
+
+											</div>
+										</div>
+
+									</div>
+								</div>
+
+								<div class="making-order__item item-making-order">
+									<div class="item-making-order__title">Покупатель</div>
+									<div class="item-making-order__inputs">
+										<div class="item-making-order__input Input">
+											<input name="form[]" autocomplete="off" type="text" id="input" class="Input-text"
+												placeholder=" " data-error="Заполните поле" data-required data-validate>
+											<div class="cut"></div>
+											<label for="input" class="Input-label">Имя<span>*</span></label>
+											<span class="Input__check _icon-check"></span>
+										</div>
+										<div class="item-making-order__input Input">
+											<input name="form[]" autocomplete="off" type="text" id="input" class="Input-text tel"
+												placeholder=" " data-error="Заполните поле" data-required data-validate>
+											<div class="cut"></div>
+											<label for="input" class="Input-label">Телефон<span>*</span></label>
+											<span class="Input__check _icon-check"></span>
+										</div>
+										<div class="item-making-order__input Input">
+											<input name="form[]" autocomplete="off" type="text" id="input" class="Input-text"
+												placeholder=" " data-error="Заполните поле" data-required data-validate>
+											<div class="cut"></div>
+											<label for="input" class="Input-label">Email<span>*</span></label>
+											<span class="Input__check _icon-check"></span>
+										</div>
+									</div>
+								</div>
+
+								<div class="making-order__item delivery-making-order">
+
+									<label for="delivery-1" class="delivery-making-order__item item-delivery-making _active">
+										<div class="item-delivery-making__header">
+											<div class="item-delivery-making__title">Самовывоз</div>
+											<div class="item-delivery-making__price">Бесплатно</div>
+										</div>
+										<div class="item-delivery-making__descp">
+											<div class="item-delivery-making__text">
+												<p>г. Курск ул. Магистральная 1</p>
+											</div>
+											<div class="item-delivery-making__chekbox">
+												<span for="check" class="checkbox">
+													<input id="delivery-1" data-error="Ошибка" checked class="checkbox__input"
+														type="radio" value="1" name="form[]">
+													<span class="checkbox__text">
+													</span>
+												</span>
+											</div>
+										</div>
+									</label>
+
+									<label for="delivery-2" class="delivery-making-order__item item-delivery-making">
+										<div class="item-delivery-making__header">
+											<div class="item-delivery-making__title">Доставка курьером</div>
+											<div class="item-delivery-making__price">от 550 р</div>
+										</div>
+										<div class="item-delivery-making__descp">
+											<div class="item-delivery-making__text">
+												<p>
+													Доставка осуществляется силами грузового такси с 14.00 до 18.00. Ориентировочная
+													стоимость <span class="_color-blue">550 рублей</span> в черте города Курска при
+													максимальной загрузке <span class="_color-blue">не более 1,5
+														тонн</span>, за городом дополнительно 36 рублей за километр от знака окончания
+													города.
+												</p>
+												<p>
+													Оплата осуществляется наличными водителю по завершению доставки.
+												</p>
+												<p><span class="_color-red">Внимание! Ознакомьтесь с <a href="">условиями
+															доставки</a></span></p>
+											</div>
+											<div class="item-delivery-making__chekbox">
+												<span for="check" class="checkbox">
+													<input id="delivery-2" data-error="Ошибка" class="checkbox__input" type="radio"
+														value="1" name="form[]">
+													<span class="checkbox__text">
+													</span>
+												</span>
+											</div>
+										</div>
+									</label>
+
+								</div>
+
+								<div class="making-order__item item-making-order">
+									<div class="item-making-order__title">Адрес доставки</div>
+									<div class="item-making-order__inputs item-making-order__inputs_col">
+										<div class="item-making-order__input Input">
+											<input name="form[]" autocomplete="off" type="text" id="input" class="Input-text"
+												placeholder=" " data-error="Заполните поле" data-required data-validate>
+											<div class="cut"></div>
+											<label for="input" class="Input-label">Адрес доставки</label>
+											<span class="Input__check _icon-check"></span>
+										</div>
+										<div class="item-making-order__input Input">
+											<input name="form[]" autocomplete="off" type="text" id="input" class="Input-text"
+												placeholder=" " data-error="Заполните поле" data-required data-validate>
+											<div class="cut"></div>
+											<label for="input" class="Input-label">Комментарий</label>
+											<span class="Input__check _icon-check"></span>
+										</div>
+									</div>
+								</div>
+
+								<div class="making-order__item delivery-making-order delivery-making-order_flex">
+
+									<label for="delivery-3" class="delivery-making-order__item item-delivery-making _active">
+										<div class="item-delivery-making__header">
+											<div class="item-delivery-making__title">Картой на сайте</div>
+											<!-- <div class="item-delivery-making__price">Бесплатно</div> -->
+										</div>
+										<div class="item-delivery-making__descp">
+											<div class="item-delivery-making__text">
+												<div class="item-delivery-making__icons">
+													<span class="item-delivery-making__icon">
+														<svg>
+															<use xlink:href="#mir"></use>
+														</svg>
+													</span>
+													<span class="item-delivery-making__icon">
+														<svg>
+															<use xlink:href="#visa"></use>
+														</svg>
+													</span>
+													<span class="item-delivery-making__icon">
+														<svg>
+															<use xlink:href="#master"></use>
+														</svg>
+													</span>
+													<span class="item-delivery-making__icon">
+														<svg>
+															<use xlink:href="#jcb"></use>
+														</svg>
+													</span>
+												</div>
+											</div>
+											<div class="item-delivery-making__chekbox">
+												<span for="check" class="checkbox">
+													<input id="delivery-3" data-error="Ошибка" checked class="checkbox__input"
+														type="radio" value="1" name="form[]">
+													<span class="checkbox__text">
+													</span>
+												</span>
+											</div>
+										</div>
+									</label>
+
+									<label for="delivery-4" class="delivery-making-order__item item-delivery-making">
+										<div class="item-delivery-making__header">
+											<div class="item-delivery-making__title">Система быстрых платежей</div>
+											<!-- <div class="item-delivery-making__price">от 550 р</div> -->
+										</div>
+										<div class="item-delivery-making__descp">
+											<div class="item-delivery-making__text">
+												<div class="item-delivery-making__icons">
+													<span class="item-delivery-making__icon">
+														<svg>
+															<use xlink:href="#just"></use>
+														</svg>
+													</span>
+												</div>
+											</div>
+											<div class="item-delivery-making__chekbox">
+												<span for="check" class="checkbox">
+													<input id="delivery-4" data-error="Ошибка" class="checkbox__input" type="radio"
+														value="1" name="form[]">
+													<span class="checkbox__text">
+													</span>
+												</span>
+											</div>
+										</div>
+									</label>
+
+								</div>
+
+							</form>
+
+						</div>
+
+						<sidebar class="main-template__sidebar sidebar-template">
+							<div class="sidebar-template__body">
+
+								<div class="cart-summary">
+									<div class="cart-summary__value">2 товара на сумму</div>
+									<div class="cart-summary__prices">
+										<div class="cart-summary__price-new new-price-card">1 591 р</div>
+										<div class="cart-summary__price-old old-price-card">1 615 р</div>
+									</div>
+									<div class="cart-summary__buttons">
+										<button type="submit" class="cart-summary__btn btn">Оформить заказ</button>
+									</div>
+								</div>
+
+							</div>
+						</sidebar>
+
+					</div>
+
+				</div>
+			</section>
+
+			@@include('html/components/_order-call.htm',{})
+
+		</main>
+		@@include('html/_footer.htm',{})
+		@@include('sprite.svg',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

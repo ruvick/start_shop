@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Акция подробно"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page page-template">
+
+			<div class="page__header">
+				<div class="page__container">
+
+					<nav class="breadcrumbs">
+						<ul class="breadcrumbs__list">
+							<li class="breadcrumbs__item">
+								<a href="home.html" class="breadcrumbs__link">Главная</a>
+							</li>
+							<li class="breadcrumbs__item">
+								<a href="home.html" class="breadcrumbs__link">Акции</a>
+							</li>
+							<li class="breadcrumbs__item">
+								<span class="breadcrumbs__current">Скидка на плитку до 25%</span>
+							</li>
+						</ul>
+					</nav>
+
+					<div class="page__title-block title-block">
+						<div class="title-block__title">
+							<h1>Скидка на плитку до 25%</h1>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<section class="page__template template stock-detail">
+				<div class="template__container">
+
+					<div class="template__main main-template">
+
+						<div class="main-template__body">
+
+							<div class="stock-detail__content">
+
+								<div class="content">
+
+									<p>
+										Внимание! Только до конца декабря скидка на качественную керамическую плитку до 25%!
+										С перечнем товара можно ознакомиться на сайте. Подробности уточняйте у продавцов
+										консультантов!
+									</p>
+
+									<h4>Пример списка</h4>
+
+									<ul>
+										<li>Выбор керамической плитки: типы, размеры, формы и цвета.</li>
+										<li>Подготовка поверхности перед укладкой плитки: очистка, выравнивание и грунтовка.</li>
+										<li>Техника укладки керамической плитки: методы, инструменты и советы для качественной
+											работы.</li>
+										<li>Затирка швов и уход за керамической плиткой: чем и как чистить керамику, чтобы
+											сохранить ее внешний вид.</li>
+									</ul>
+
+								</div>
+
+								<a href="#stocks.html" class="stock-detail__link btn">К списку акций</a>
+
+							</div>
+
+						</div>
+
+						<sidebar class="main-template__sidebar sidebar-template">
+							<div class="sidebar-template__body">
+								<picture class="stock-detail__image image-stock-detail-ibg">
+									<source srcset="img/stocks/02.jpg" media="(min-width: 992px)" />
+									<img src="img/stocks/03.jpg" loading="lazy" alt="Картинка">
+								</picture>
+							</div>
+						</sidebar>
+
+					</div>
+
+				</div>
+			</section>
+
+
+
+			@@include('html/components/_order-call.htm',{})
+
+		</main>
+		@@include('html/_footer.htm',{})
+		@@include('sprite.svg',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

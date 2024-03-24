@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Калькулятор"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page page-template">
+
+			<div class="page__header">
+				<div class="page__container">
+
+					<nav class="breadcrumbs">
+						<ul class="breadcrumbs__list">
+							<li class="breadcrumbs__item">
+								<a href="home.html" class="breadcrumbs__link">Главная</a>
+							</li>
+							<li class="breadcrumbs__item">
+								<a href="home.html" class="breadcrumbs__link">Tecos бирюза</a>
+							</li>
+							<li class="breadcrumbs__item">
+								<span class="breadcrumbs__current">Калькулятор сайдинга</span>
+							</li>
+						</ul>
+					</nav>
+
+					<div class="page__title-block title-block">
+						<div class="title-block__title">
+							<h1>Калькулятор сайдинга</h1>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<section class="page__calculator calculator">
+				<div class="calculator__container">
+
+					<div class="calculator__main main-calculator">
+
+						<form action="#" class="main-calculator__form form-calculator">
+							<div class="form-calculator__row">
+								<div class="form-calculator__input Input">
+									<input name="form[]" autocomplete="off" type="number" id="input" class="Input-text"
+										placeholder=" " data-error="Заполните поле" data-required data-validate>
+									<div class="cut"></div>
+									<label for="input" class="Input-label">Длинна сайдинга</label>
+									<span class="Input__check _icon-check"></span>
+								</div>
+								<div class="form-calculator__input Input">
+									<input name="form[]" autocomplete="off" type="number" id="input" class="Input-text"
+										placeholder=" " data-error="Заполните поле" data-required data-validate>
+									<div class="cut"></div>
+									<label for="input" class="Input-label">Высота сайдинга</label>
+									<span class="Input__check _icon-check"></span>
+								</div>
+								<div class="form-calculator__input Input">
+									<input name="form[]" autocomplete="off" type="number" id="input" class="Input-text"
+										placeholder=" " data-error="Заполните поле" data-required data-validate>
+									<div class="cut"></div>
+									<label for="input" class="Input-label">Длинна фурнитуры</label>
+									<span class="Input__check _icon-check"></span>
+								</div>
+							</div>
+							<div class="form-calculator__inner">
+
+								<div class="form-calculator__column">
+									<div class="form-calculator__title">Стены</div>
+									<div class="form-calculator__line">
+										<div class="form-calculator__input Input">
+											<input name="form[]" autocomplete="off" type="number" id="input" class="Input-text"
+												placeholder=" " data-error="Заполните поле" data-required data-validate>
+											<div class="cut"></div>
+											<label for="input" class="Input-label">Площадь всех стен, м2</label>
+											<span class="Input__check _icon-check"></span>
+										</div>
+										<div class="form-calculator__input Input">
+											<input name="form[]" autocomplete="off" type="number" id="input" class="Input-text"
+												placeholder=" " data-error="Заполните поле" data-required data-validate>
+											<div class="cut"></div>
+											<label for="input" class="Input-label">Площадь всех фронтонов, м2</label>
+											<span class="Input__check _icon-check"></span>
+										</div>
+										<div class="form-calculator__input Input">
+											<input name="form[]" autocomplete="off" type="number" id="input" class="Input-text"
+												placeholder=" " data-error="Заполните поле" data-required data-validate>
+											<div class="cut"></div>
+											<label for="input" class="Input-label">Перемитер дома, м</label>
+											<span class="Input__check _icon-check"></span>
+										</div>
+									</div>
+								</div>
+
+								<div class="form-calculator__column">
+									<div class="form-calculator__title">Окна</div>
+									<div class="form-calculator__line">
+										<div class="form-calculator__input Input">
+											<input name="form[]" autocomplete="off" type="number" id="input" class="Input-text"
+												placeholder=" " data-error="Заполните поле" data-required data-validate>
+											<div class="cut"></div>
+											<label for="input" class="Input-label">Колличество окон, шт</label>
+											<span class="Input__check _icon-check"></span>
+										</div>
+										<div class="form-calculator__input Input">
+											<input name="form[]" autocomplete="off" type="number" id="input" class="Input-text"
+												placeholder=" " data-error="Заполните поле" data-required data-validate>
+											<div class="cut"></div>
+											<label for="input" class="Input-label">Ср. ширина окона, м</label>
+											<span class="Input__check _icon-check"></span>
+										</div>
+										<div class="form-calculator__input Input">
+											<input name="form[]" autocomplete="off" type="number" id="input" class="Input-text"
+												placeholder=" " data-error="Заполните поле" data-required data-validate>
+											<div class="cut"></div>
+											<label for="input" class="Input-label">Средняя высота окна, м</label>
+											<span class="Input__check _icon-check"></span>
+										</div>
+									</div>
+								</div>
+
+								<div class="form-calculator__column">
+									<div class="form-calculator__title">Углы</div>
+									<div class="form-calculator__line">
+										<div class="form-calculator__input Input">
+											<input name="form[]" autocomplete="off" type="number" id="input" class="Input-text"
+												placeholder=" " data-error="Заполните поле" data-required data-validate>
+											<div class="cut"></div>
+											<label for="input" class="Input-label">Кол-во, наружных углов, шт</label>
+											<span class="Input__check _icon-check"></span>
+										</div>
+										<div class="form-calculator__input Input">
+											<input name="form[]" autocomplete="off" type="number" id="input" class="Input-text"
+												placeholder=" " data-error="Заполните поле" data-required data-validate>
+											<div class="cut"></div>
+											<label for="input" class="Input-label">Длинна всех наружных углов, м</label>
+											<span class="Input__check _icon-check"></span>
+										</div>
+										<div class="form-calculator__input Input">
+											<input name="form[]" autocomplete="off" type="number" id="input" class="Input-text"
+												placeholder=" " data-error="Заполните поле" data-required data-validate>
+											<div class="cut"></div>
+											<label for="input" class="Input-label">Кол-во внутренних углов, шт</label>
+											<span class="Input__check _icon-check"></span>
+										</div>
+										<div class="form-calculator__input Input">
+											<input name="form[]" autocomplete="off" type="number" id="input" class="Input-text"
+												placeholder=" " data-error="Заполните поле" data-required data-validate>
+											<div class="cut"></div>
+											<label for="input" class="Input-label">Длинна всех внутренних углов, м</label>
+											<span class="Input__check _icon-check"></span>
+										</div>
+										<div class="form-calculator__input Input">
+											<input name="form[]" autocomplete="off" type="number" id="input" class="Input-text"
+												placeholder=" " data-error="Заполните поле" data-required data-validate>
+											<div class="cut"></div>
+											<label for="input" class="Input-label">Высота цоколя, м</label>
+											<span class="Input__check _icon-check"></span>
+										</div>
+									</div>
+								</div>
+
+								<div class="form-calculator__column">
+									<div class="form-calculator__title">Дверные проемы</div>
+									<div class="form-calculator__line">
+										<div class="form-calculator__input Input">
+											<input name="form[]" autocomplete="off" type="number" id="input" class="Input-text"
+												placeholder=" " data-error="Заполните поле" data-required data-validate>
+											<div class="cut"></div>
+											<label for="input" class="Input-label">Кол-во дверных проемов, шт</label>
+											<span class="Input__check _icon-check"></span>
+										</div>
+										<div class="form-calculator__input Input">
+											<input name="form[]" autocomplete="off" type="number" id="input" class="Input-text"
+												placeholder=" " data-error="Заполните поле" data-required data-validate>
+											<div class="cut"></div>
+											<label for="input" class="Input-label">Ср. ширина дверного проема, м</label>
+											<span class="Input__check _icon-check"></span>
+										</div>
+										<div class="form-calculator__input Input">
+											<input name="form[]" autocomplete="off" type="number" id="input" class="Input-text"
+												placeholder=" " data-error="Заполните поле" data-required data-validate>
+											<div class="cut"></div>
+											<label for="input" class="Input-label">Средняя высота дверного проема, м</label>
+											<span class="Input__check _icon-check"></span>
+										</div>
+									</div>
+								</div>
+
+							</div>
+							<div class="form-calculator__buttons">
+								<button type="submit" class="form-calculator__btn btn">Рассчитать</button>
+								<button type="reset" class="form-calculator__btn btn btn_light">Очистить</button>
+							</div>
+						</form>
+
+						<!-- <div class="main-calculator__images"> -->
+						<div class="main-calculator__img-ibg">
+							<img src="img/calculator/01.png" loading="lazy" alt="Картинка">
+						</div>
+						<!-- </div> -->
+
+					</div>
+
+				</div>
+			</section>
+
+			@@include('html/components/_order-call.htm',{})
+
+		</main>
+		@@include('html/_footer.htm',{})
+		@@include('sprite.svg',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

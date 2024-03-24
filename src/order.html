@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Как заказать"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page page-template">
+
+			<div class="page__header">
+				<div class="page__container">
+
+					<nav class="breadcrumbs">
+						<ul class="breadcrumbs__list">
+							<li class="breadcrumbs__item">
+								<a href="home.html" class="breadcrumbs__link">Главная</a>
+							</li>
+							<li class="breadcrumbs__item">
+								<span class="breadcrumbs__current">Как заказать</span>
+							</li>
+						</ul>
+					</nav>
+
+					<div class="page__title-block title-block">
+						<div class="title-block__title">
+							<h1>Как заказать</h1>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<section class="page__template template">
+				<div class="template__container">
+
+					<div class="template__main main-template">
+
+						<sidebar class="main-template__sidebar sidebar-template">
+							<div class="sidebar-template__body">
+								<nav class="tabs__navigation">
+									<a href="order.html" class="tabs__title _icon-arrow-big-right _tab-active">Оплата</a>
+									<a href="delivery.html" class="tabs__title _icon-arrow-big-right">Доставка</a>
+								</nav>
+							</div>
+						</sidebar>
+
+						<div class="main-template__body">
+							<div class="content">
+
+								<p>
+									Оплата производится по банковской карте в момент заказа. Для резервирования товара
+									по Вашему заказу должна быть осуществлена 100% предоплата.
+								</p>
+
+								<p>
+									Для того, чтобы забрать оплаченный товар со склада (г. Курск, Магистральная, 1)
+									вам необходимо удостовериться в получении Расходного ордера на товар, который будет
+									выслан на Вашу электронную почту. Данный документ, в электронном виде, является
+									основанием для получения товара со склада, предъявите его кладовщику и получите товар.
+									Внимание, при получении товара со склада покупатель обязан
+									проверить количество и качество товара.
+								</p>
+
+								<div class="content__inner">
+									<div class="content__column">
+										<h3>Способы оплаты</h3>
+										<h4>Банковской картой</h4>
+										<p>
+											Для выбора оплаты товара с помощью банковской карты на соответствующей странице
+											необходимо нажать кнопку Оплата заказа банковской картой. Оплата происходит
+											через ПАО Сбербанк с использованием банковских карт следующих платёжных систем:
+										</p>
+										<ul>
+											<li>Мир</li>
+											<li>Visa International</li>
+											<li>Mastercard Worldwide</li>
+											<li>JCB</li>
+											<img src="img/content/05.png" loading="lazy" alt="Картинка">
+										</ul>
+									</div>
+									<div class="content__column">
+										<img src="img/content/04.png" loading="lazy" alt="Картинка">
+									</div>
+								</div>
+
+								<p>
+									Для оплаты (ввода реквизитов вашей карты) вы будете перенаправлены на платёжный шлюз
+									ПАО Сбербанк. Соединение с платёжным шлюзом и передача информации осуществляется
+									в защищённом режиме с использованием протокола шифрования SSL. В случае если ваш банк
+									поддерживает технологию безопасного проведения интернет-платежей Verified By Visa,
+									Mastercard SecureCode, MIR Accept, J-Secure, для проведения платежа также может
+									потребоваться ввод специального пароля.
+								</p>
+
+								<p>
+									Настоящий сайт поддерживает 256-битное шифрование. Конфиденциальность сообщаемой
+									персональной информации обеспечивается ПАО Сбербанк. Введённая информация не будет
+									предоставлена третьим лицам за исключением случаев, предусмотренных
+									законодательством РФ. Проведение платежей по банковским картам осуществляется в строгом
+									соответствии с требованиями платёжных систем Мир, Visa Int., Mastercard Europe Spri,
+									JCB.
+								</p>
+
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+			</section>
+
+
+
+			@@include('html/components/_order-call.htm',{})
+
+		</main>
+		@@include('html/_footer.htm',{})
+		@@include('sprite.svg',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

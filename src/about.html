@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Личный кабинет - О компании"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page page-template">
+
+			<div class="page__header">
+				<div class="page__container">
+
+					<nav class="breadcrumbs">
+						<ul class="breadcrumbs__list">
+							<li class="breadcrumbs__item">
+								<a href="home.html" class="breadcrumbs__link">Главная</a>
+							</li>
+							<li class="breadcrumbs__item">
+								<span class="breadcrumbs__current">О компании</span>
+							</li>
+						</ul>
+					</nav>
+
+					<div class="page__title-block title-block">
+						<div class="title-block__title">
+							<h1>О компании</h1>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<section class="page__template template">
+				<div class="template__container">
+
+					<div class="template__main main-template">
+
+						<sidebar class="main-template__sidebar sidebar-template">
+							<div class="sidebar-template__body">
+								<nav class="tabs__navigation">
+									<a href="about.html" class="tabs__title _icon-arrow-big-right _tab-active">О компании</a>
+									<a href="contacts.html" class="tabs__title _icon-arrow-big-right">Контакты</a>
+								</nav>
+							</div>
+						</sidebar>
+
+						<div class="main-template__body">
+							<div class="content">
+
+								<p>
+									Торговый дом «Курский двор» современная динамично развивающаяся компания. Осуществляет
+									поставки отечественных
+									и импортных отделочных материалов для ремонта и строительства на рынок Курской области
+									и Центрального Черноземья. Компания работает на рынке отделочных материалов свыше 10
+									лет и занимает позицию лидера в сфере оптовых поставок стройматериалов для отделки
+									жилых и коммерческих помещений
+								</p>
+
+								<img src="img/content/01.png" loading="lazy" alt="Картинка">
+
+								<div class="content__inner">
+									<div class="content__column">
+										<ul>
+											<li>Керамическая плитка</li>
+											<li>Виниловый Сайдинг</li>
+											<li>Межкомнатные двери</li>
+											<li>Панели ПВХ и МДФ</li>
+											<li>Ламинат</li>
+											<li>И многие другие отделочные материалы</li>
+										</ul>
+									</div>
+									<div class="content__column">
+										<img src="img/content/02.png" loading="lazy" alt="Картинка">
+									</div>
+								</div>
+
+								<p>
+									Являясь, дистрибьютором ряда Российский заводов Торговый Дом Курский Двор способен
+									предложить своим клиентам не только выгодные цены, но и гарантированный складской
+									остаток!
+								</p>
+
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+			</section>
+
+
+
+			@@include('html/components/_order-call.htm',{})
+
+		</main>
+		@@include('html/_footer.htm',{})
+		@@include('sprite.svg',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

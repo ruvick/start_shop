@@ -1,0 +1,571 @@
+<!-- Войти или зарегистрироваться -->
+<div id="log-register" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close _icon-close"></button>
+			<div class="popup__body">
+				<div class="popup__header">
+					<div class="popup__title">Войти или зарегистрироваться</div>
+				</div>
+				<div class="popup__main">
+					<form action="#" class="popup__form form-popup">
+						<div class="form__line">
+							<div class="form-popup__input Input">
+								<input name="form[]" autocomplete="off" type="text" id="input" class="Input-text tel"
+									placeholder=" " data-error="Заполните поле" data-required data-validate>
+								<div class="cut"></div>
+								<label for="input" class="Input-label">Телефон</label>
+								<span class="Input__check _icon-check"></span>
+							</div>
+
+							<div class="form-popup__buttons">
+								<button type="submit" class="form-popup__btn btn">Получить код</button>
+								<a href="" class="form-popup__btn btn btn_light">Войти по паролю</a>
+							</div>
+
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Личные данные -->
+<div id="personal-data" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close _icon-close"></button>
+			<div class="popup__body">
+				<div class="popup__header">
+					<div class="popup__title">Контактные данные</div>
+				</div>
+				<div class="popup__main">
+					<form action="#" class="popup__form form-popup">
+						<div class="form__line">
+							<div class="form-popup__input Input">
+								<input name="form[]" autocomplete="off" type="text" id="input" class="Input-text tel"
+									placeholder=" " data-error="Заполните поле" data-required data-validate>
+								<div class="cut"></div>
+								<label for="input" class="Input-label">Телефон</label>
+								<span class="Input__check _icon-check"></span>
+							</div>
+							<div class="form-popup__input Input">
+								<input name="form[]" autocomplete="off" type="text" id="input" class="Input-text"
+									placeholder=" " data-error="Заполните поле" data-required data-validate>
+								<div class="cut"></div>
+								<label for="input" class="Input-label">Email</label>
+								<span class="Input__check _icon-check"></span>
+							</div>
+							<div class="form-popup__buttons">
+								<button type="submit" class="form-popup__btn btn">Сохранить</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Войти по паролю -->
+<div id="log-password" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close _icon-close"></button>
+			<div class="popup__body">
+				<div class="popup__header">
+					<div class="popup__title">Войти по паролю</div>
+				</div>
+				<div class="popup__main">
+					<form action="#" class="popup__form form-popup">
+						<div class="form__line">
+							<div class="form-popup__input Input">
+								<input name="form[]" autocomplete="off" type="text" id="input" class="Input-text"
+									placeholder=" " data-error="Заполните поле" data-required data-validate>
+								<div class="cut"></div>
+								<label for="input" class="Input-label">Телефон или Email</label>
+								<span class="Input__check _icon-check"></span>
+							</div>
+							<div class="form-popup__input Input">
+								<input name="form[]" autocomplete="off" type="password" id="input" class="Input-text"
+									placeholder=" " data-error="Заполните поле" data-required data-validate>
+								<div class="cut"></div>
+								<label for="input" class="Input-label">Пароль</label>
+								<button class="input__viewpass _icon-hide" type="button"></button>
+								<!-- <span class="Input__check _icon-check"></span> -->
+							</div>
+							<div class="form-popup__buttons">
+								<div class="form-popup__action">
+									<label for="check" class="checkbox">
+										<input id="check" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1"
+											name="form[]">
+										<span class="checkbox__text"><span>Запомнить меня</span></span>
+									</label>
+									<a href="" class="form-popup__link-reg">Забыли пароль?</a>
+								</div>
+								<button type="button" class="form-popup__btn btn">Войти</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Восстановление пароля -->
+<div id="password-recovery" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close _icon-close"></button>
+			<div class="popup__body">
+				<div class="popup__header">
+					<div class="popup__title">Восстановление пароля</div>
+				</div>
+				<div class="popup__main">
+					<form action="#" class="popup__form form-popup">
+						<div class="form__line">
+							<div class="form-popup__input Input">
+								<input name="form[]" autocomplete="off" type="text" id="input" class="Input-text"
+									placeholder=" " data-error="Заполните поле" data-required data-validate>
+								<div class="cut"></div>
+								<label for="input" class="Input-label">Email</label>
+								<span class="Input__check _icon-check"></span>
+							</div>
+							<div class="form-popup__notification">Информация по восстановлению пароля будет выслана Вам по
+								Email</div>
+							<div class="form-popup__buttons">
+								<button type="submit" class="form-popup__btn btn">Восстановить</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Регистрация -->
+<div id="register" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close _icon-close"></button>
+			<div class="popup__body">
+				<div class="popup__header">
+					<div class="popup__title">Регистрация</div>
+				</div>
+				<div class="popup__main">
+					<form action="#" class="popup__form form-popup">
+						<div class="form__line">
+
+							<div class="form-popup__input Input">
+								<input name="form[]" autocomplete="off" type="text" id="input" class="Input-text tel"
+									placeholder=" " data-error="Заполните поле" data-required data-validate>
+								<div class="cut"></div>
+								<label for="input" class="Input-label">Телефон</label>
+								<span class="Input__check _icon-check"></span>
+							</div>
+
+							<div class="form-popup__input Input">
+								<input name="form[]" autocomplete="off" type="text" id="input" class="Input-text"
+									placeholder=" " data-error="Заполните поле" data-required data-validate>
+								<div class="cut"></div>
+								<label for="input" class="Input-label">Email<span>*</span></label>
+								<span class="Input__check _icon-check"></span>
+							</div>
+
+							<div class="form-popup__input Input">
+								<input name="form[]" autocomplete="off" type="text" id="input" class="Input-text"
+									placeholder=" " data-error="Заполните поле" data-required data-validate>
+								<div class="cut"></div>
+								<label for="input" class="Input-label">Имя<span>*</span></label>
+								<span class="Input__check _icon-check"></span>
+							</div>
+
+							<div class="form-popup__input Input">
+								<input name="form[]" autocomplete="off" type="text" id="input" class="Input-text"
+									placeholder=" " data-error="Заполните поле" data-required data-validate>
+								<div class="cut"></div>
+								<label for="input" class="Input-label">Фамилия<span>*</span></label>
+								<span class="Input__check _icon-check"></span>
+							</div>
+
+							<label for="check-sd" class="checkbox">
+								<input id="check-sd" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1"
+									name="form[]">
+								<span class="checkbox__text"><span>Соглашаюсь на обработку
+										<a href="">персональных данных</a></span></span>
+							</label>
+
+							<div class="form-popup__buttons">
+								<div class="form-popup__action">
+									<div class="form-popup__question">Уже зарегистрированы?</div>
+									<a href="" class="form-popup__link-reg">Войти</a>
+								</div>
+								<button type="submit" class="form-popup__btn btn">Зарегистрироваться</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Уведомление о поступлении  -->
+<div id="receipt-notification" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close _icon-close"></button>
+			<div class="popup__body">
+				<div class="popup__header">
+					<div class="popup__title">Уведомление о поступлении</div>
+					<div class="popup__subtitle">
+						Плитка для стен "Санрайз" бежевый (20×44) 1 сорт
+					</div>
+					<div class="popup__text">
+						Вы можете подписаться на уведомпение о поступлении этого товара в продажу. Как только данный товар
+						появится в продаже, мы проинформируем вас об этом
+					</div>
+				</div>
+				<div class="popup__main">
+					<form action="#" class="popup__form form-popup">
+						<div class="form__line">
+
+							<div class="form-popup__row">
+								<div class="form-popup__title">Личные данные</div>
+								<div class="form-popup__input Input">
+									<input name="form[]" autocomplete="off" type="text" id="input" class="Input-text"
+										placeholder=" " data-error="Заполните поле" data-required data-validate>
+									<div class="cut"></div>
+									<label for="input" class="Input-label">Имя</label>
+									<span class="Input__check _icon-check"></span>
+								</div>
+								<div class="form-popup__input Input">
+									<input name="form[]" autocomplete="off" type="text" id="input" class="Input-text"
+										placeholder=" " data-error="Заполните поле" data-required data-validate>
+									<div class="cut"></div>
+									<label for="input" class="Input-label">Email</label>
+									<span class="Input__check _icon-check"></span>
+								</div>
+								<div class="form-popup__input Input">
+									<input name="form[]" autocomplete="off" type="text" id="input" class="Input-text tel"
+										placeholder=" " data-error="Заполните поле" data-required data-validate>
+									<div class="cut"></div>
+									<label for="input" class="Input-label">Телефон</label>
+									<span class="Input__check _icon-check"></span>
+								</div>
+							</div>
+
+							<div class="form-popup__row">
+								<div class="form-popup__title">Срок ожидания</div>
+								<select name="form[]" class="control">
+									<option value="1" selected="selected">15 дней</option>
+									<option value="2">20 дней</option>
+									<option value="3">25 дней</option>
+									<option value="4">1 месяца</option>
+									<option value="5">2 месяца</option>
+									<option value="6">3 месяца</option>
+									<option value="7">4 месяца</option>
+									<option value="8">5 месяца</option>
+								</select>
+							</div>
+
+							<div class="form-popup__row">
+								<label for="check-2" class="checkbox">
+									<input id="check-2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1"
+										name="form[]">
+									<span class="checkbox__text"><span>Соглашаюсь на обработку
+											<a href="">персональных данных</a></span></span>
+								</label>
+							</div>
+							<div class="form-popup__buttons">
+								<button type="submit" class="form-popup__btn btn">Отправить</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Оставить заявку -->
+<div id="submit-application" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close _icon-close"></button>
+			<div class="popup__body">
+				<div class="popup__header">
+					<div class="popup__title">Оставить заявку</div>
+					<div class="popup__subtitle fw-40">
+						Панель МДФ СОЮЗ "Классик" Ясень Перламутр
+					</div>
+				</div>
+				<div class="popup__main">
+					<form action="#" class="popup__form form-popup">
+						<div class="form__line">
+
+							<div class="form-popup__row">
+								<div class="form-popup__input Input">
+									<input name="form[]" autocomplete="off" type="text" id="input" class="Input-text tel"
+										placeholder=" " data-error="Заполните поле" data-required data-validate>
+									<div class="cut"></div>
+									<label for="input" class="Input-label">Телефон</label>
+									<span class="Input__check _icon-check"></span>
+								</div>
+								<div class="form-popup__input Input">
+									<input name="form[]" autocomplete="off" type="text" id="input" class="Input-text"
+										placeholder=" " data-error="Заполните поле" data-required data-validate>
+									<div class="cut"></div>
+									<label for="input" class="Input-label">Имя</label>
+									<span class="Input__check _icon-check"></span>
+								</div>
+								<div class="form-popup__input Input">
+									<input name="form[]" autocomplete="off" type="text" id="input" class="Input-text"
+										placeholder=" " data-error="Заполните поле" data-required data-validate>
+									<div class="cut"></div>
+									<label for="input" class="Input-label">Email</label>
+									<span class="Input__check _icon-check"></span>
+								</div>
+							</div>
+
+							<div class="form-popup__row">
+								<label for="checka-2" class="checkbox">
+									<input id="checka-2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1"
+										name="form[]">
+									<span class="checkbox__text"><span>Соглашаюсь на обработку
+											<a href="">персональных данных</a></span></span>
+								</label>
+							</div>
+							<div class="form-popup__buttons">
+								<button type="submit" class="form-popup__btn btn">Отправить</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Заявка на дизайн проект -->
+<div id="application-design" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content popup__content_design">
+			<button data-close type="button" class="popup__close _icon-close"></button>
+			<div class="popup__body">
+				<div class="popup__header">
+					<div class="popup__title">Оставить заявку</div>
+					<div class="popup__subtitle fw-40">
+						на бесплатный дизайн-проект
+					</div>
+				</div>
+				<div class="popup__main">
+					<form action="#" class="popup__form form-popup">
+						<div class="form__line">
+
+							<div class="form-popup__row">
+								<div class="form-popup__input Input">
+									<input name="form[]" autocomplete="off" type="text" id="input" class="Input-text"
+										placeholder=" " data-error="Заполните поле" data-required data-validate>
+									<div class="cut"></div>
+									<label for="input" class="Input-label">Коллекция</label>
+									<span class="Input__check _icon-check"></span>
+								</div>
+								<div class="form-popup__input Input">
+									<input name="form[]" autocomplete="off" type="text" id="input" class="Input-text"
+										placeholder=" " data-error="Заполните поле" data-required data-validate>
+									<div class="cut"></div>
+									<label for="input" class="Input-label">Производитель</label>
+									<span class="Input__check _icon-check"></span>
+								</div>
+							</div>
+
+							<div class="form-popup__row">
+								<div class="form-popup__title">Размеры помещения</div>
+
+								<div class="form-popup__technical">
+
+									<div class="form-popup__input Input">
+										<input name="form[]" autocomplete="off" type="text" id="input" class="Input-text"
+											placeholder=" " data-error="Заполните поле" data-required data-validate>
+										<div class="cut"></div>
+										<label for="input" class="Input-label">Ширина, м</label>
+										<span class="Input__check _icon-check"></span>
+									</div>
+
+									<div class="form-popup__input Input">
+										<input name="form[]" autocomplete="off" type="text" id="input" class="Input-text"
+											placeholder=" " data-error="Заполните поле" data-required data-validate>
+										<div class="cut"></div>
+										<label for="input" class="Input-label">Длинна, м</label>
+										<span class="Input__check _icon-check"></span>
+									</div>
+
+									<div class="form-popup__input Input">
+										<input name="form[]" autocomplete="off" type="text" id="input" class="Input-text"
+											placeholder=" " data-error="Заполните поле" data-required data-validate>
+										<div class="cut"></div>
+										<label for="input" class="Input-label">Высота, м</label>
+										<span class="Input__check _icon-check"></span>
+									</div>
+
+								</div>
+
+								<div class="input-file">
+									<label id="mylabel" class="input-file__label">
+										<span id="file-name" class="input-file__upload _icon-paper-clip"
+											placeholder="File.txt">Прикрепить схему
+											помещения</span>
+										<input id="myfile" type="file" name="file" onchange="getFileName ();">
+									</label>
+								</div>
+								<div class="input-file__notification"></div>
+
+								<script>
+									const notification = document.querySelector('.input-file__notification');
+									// Получение файла
+									function getFileName() {
+										let file = document.getElementById('myfile').value;
+										file = file.replace(/\\/g, '/').split('/').pop();
+										document.getElementById('file-name').innerHTML = '' + file;
+										emptyFile();
+									}
+									// Проверка файла
+									function emptyFile() {
+										let file = document.getElementById('myfile');
+										if (file.files.value == 0) {
+											console.log('Пустой файл');
+										}
+										else {
+											notification.style.opacity = "0";
+											console.log('Пустой файл');
+										}
+									}
+								</script>
+
+							</div>
+
+							<div class="form-popup__row">
+								<div class="form-popup__title">Личные данные</div>
+								<div class="form-popup__input Input">
+									<input name="form[]" autocomplete="off" type="text" id="input" class="Input-text"
+										placeholder=" " data-error="Заполните поле" data-required data-validate>
+									<div class="cut"></div>
+									<label for="input" class="Input-label">Имя</label>
+									<span class="Input__check _icon-check"></span>
+								</div>
+								<div class="form-popup__input Input">
+									<input name="form[]" autocomplete="off" type="text" id="input" class="Input-text tel"
+										placeholder=" " data-error="Заполните поле" data-required data-validate>
+									<div class="cut"></div>
+									<label for="input" class="Input-label">Номер телефона</label>
+									<span class="Input__check _icon-check"></span>
+								</div>
+							</div>
+
+							<div class="form-popup__row">
+								<label for="checks-2" class="checkbox">
+									<input id="checks-2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1"
+										name="form[]">
+									<span class="checkbox__text"><span>Соглашаюсь на обработку
+											<a href="">персональных данных</a></span></span>
+								</label>
+							</div>
+							<div class="form-popup__buttons">
+								<button type="submit" class="form-popup__btn btn">Отправить</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Уведомление о поступлении успешно -->
+<div id="receipt-successful" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content popup__content_success">
+			<button data-close type="button" class="popup__close _icon-close"></button>
+			<div class="popup__body">
+				<div class="popup__header">
+					<div class="popup__title _icon-check">Мы с Вами свяжемся при поступлении товара</div>
+				</div>
+			</div>
+			<div class="popup__main">
+				<form action="#" class="popup__form form-popup">
+					<div class="form__line">
+						<button type="submit" class="form-popup__btn btn">Хорошо</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Заказ оформлен -->
+<div id="order-placed" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content popup__content_success">
+			<button data-close type="button" class="popup__close _icon-close"></button>
+			<div class="popup__body">
+				<div class="popup__header">
+					<div class="popup__title _icon-check">Заказ оформлен</div>
+				</div>
+			</div>
+			<div class="popup__main">
+				<form action="#" class="popup__form form-popup">
+					<div class="form__line">
+						<button type="submit" class="form-popup__btn btn">Хорошо</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Заявка отправлена -->
+<div id="order-sent" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content popup__content_success">
+			<button data-close type="button" class="popup__close _icon-close"></button>
+			<div class="popup__body">
+				<div class="popup__header">
+					<div class="popup__title _icon-check">Заявка отправлена</div>
+				</div>
+			</div>
+			<div class="popup__main">
+				<form action="#" class="popup__form form-popup">
+					<div class="form__line">
+						<button type="submit" class="form-popup__btn btn">Хорошо</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Код подтверждения -->
+<div id="confirmation-code" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content popup__content_small">
+			<button data-close type="button" class="popup__close _icon-close"></button>
+			<div class="popup__body">
+				<div class="popup__header">
+					<div class="popup__title">Код <br> подтверждения</div>
+				</div>
+			</div>
+			<div class="popup__main">
+				<form action="#" class="popup__form form-popup">
+					<div class="form__line">
+						<div class="form-popup__code pincode-input-container"></div>
+						<button type="submit" class="form-popup__btn btn">Подтвердить</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>

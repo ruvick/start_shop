@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Личный кабинет - История заказов"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page page-template page-personal">
+
+			<div class="page__header">
+				<div class="page__container">
+
+					<nav class="breadcrumbs">
+						<ul class="breadcrumbs__list">
+							<li class="breadcrumbs__item">
+								<a href="home.html" class="breadcrumbs__link">Главная</a>
+							</li>
+							<li class="breadcrumbs__item">
+								<span class="breadcrumbs__current">Личный
+									кабинет</span>
+							</li>
+						</ul>
+					</nav>
+
+					<div class="page__title-block title-block">
+						<div class="title-block__title">
+							<h1>Личный кабинет</h1>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<section class="page__template template">
+				<div class="template__container">
+
+					<div class="template__main main-template">
+
+						<sidebar class="main-template__sidebar sidebar-template">
+							<div class="sidebar-template__body">
+								<div class="personal-navigation">
+									<div class="personal-navigation__header header-personal-navigation">
+										<div class="header-personal-navigation__title">Личный кабинет</div>
+										<button type="button" class="header-personal-navigation__btn _icon-close"></button>
+									</div>
+									<nav class="tabs__navigation">
+										<a href="personal-data.html" class="tabs__title _icon-arrow-big-right">Личные
+											данные</a>
+										<a href="current-orders.html" class="tabs__title _icon-arrow-big-right">Текущие заказы</a>
+										<a href="no-orders.html" class="tabs__title _icon-arrow-big-right">Нет
+											заказов</a>
+										<a href="order-history.html" class="tabs__title _icon-arrow-big-right _tab-active">История
+											заказов</a>
+										<a href="change-password.html" class="tabs__title _icon-arrow-big-right">Сменить
+											пароль</a>
+										<a href="" class="tabs__title tabs__title_link">Выйти</a>
+									</nav>
+								</div>
+							</div>
+						</sidebar>
+
+						<div class="main-template__body">
+
+							<div class="personal-content">
+
+								<div class="personal-content__orders orders-personal">
+
+									<div class="orders-personal__item item-orders">
+										<div class="item-orders__header">
+
+											<div class="item-orders__numbering numbering-orders">
+												<div class="numbering-orders__number">Заказ №55</div>
+												<div class="numbering-orders__data">от 15 ноября</div>
+											</div>
+
+											<div class="item-orders__prices prices-orders">
+												<div class="prices-orders__price">121 221 р</div>
+												<div class="prices-orders__stickers">
+													<div class="prices-orders__sticker"><span class="sticker _red">Ожидает
+															оплаты</span></div>
+												</div>
+											</div>
+
+										</div>
+										<div class="item-orders__body body-orders">
+
+											<div class="body-orders__actions">
+												<div class="body-orders__address"><span>Адрес доставки</span>Алтайский край,
+													г. Барнаул, ул. Ленина, д.15</div>
+												<div class="body-orders__buttons">
+													<button type="button" class="body-orders__button">Оплатить</button>
+													<button type="button" class="body-orders__button">Повторить заказ</button>
+													<button type="reset"
+														class="body-orders__button body-orders__button_reset">Отменить</button>
+													<button type="button" class="body-orders__button">Смотреть подробно</button>
+												</div>
+											</div>
+
+											<div class="body-orders__images">
+												<div class="body-orders__img">
+													<img src="img/card-product/07.jpg" loading="lazy" alt="Картинка">
+												</div>
+												<div class="body-orders__img">
+													<img src="img/orders/02.jpg" loading="lazy" alt="Картинка">
+												</div>
+											</div>
+
+										</div>
+									</div>
+
+									<div class="orders-personal__item item-orders">
+										<div class="item-orders__header">
+
+											<div class="item-orders__numbering numbering-orders">
+												<div class="numbering-orders__number">Заказ №55</div>
+												<div class="numbering-orders__data">от 15 ноября</div>
+											</div>
+
+											<div class="item-orders__prices prices-orders">
+												<div class="prices-orders__price">121 221 р</div>
+												<div class="prices-orders__stickers">
+													<div class="prices-orders__sticker"><span class="sticker _grey">Передан в
+															доставку</span></div>
+												</div>
+											</div>
+
+										</div>
+										<div class="item-orders__body body-orders">
+
+											<div class="body-orders__actions">
+												<div class="body-orders__address"><span>Адрес доставки</span>Алтайский край,
+													г. Барнаул, ул. Ленина, д.15</div>
+												<div class="body-orders__buttons">
+													<button type="button" class="body-orders__button">Оплатить</button>
+													<button type="button" class="body-orders__button">Повторить заказ</button>
+													<button type="reset"
+														class="body-orders__button body-orders__button_reset">Отменить</button>
+													<button class="body-orders__button">Смотреть подробно</button>
+												</div>
+											</div>
+
+											<div class="body-orders__images">
+												<div class="body-orders__img">
+													<img src="img/card-product/05.jpg" loading="lazy" alt="Картинка">
+												</div>
+												<div class="body-orders__img">
+													<img src="img/card-product/02.jpg" loading="lazy" alt="Картинка">
+												</div>
+												<div class="body-orders__img">
+													<img src="img/card-product/03.jpg" loading="lazy" alt="Картинка">
+												</div>
+												<div class="body-orders__img">
+													<img src="img/card-product/07.jpg" loading="lazy" alt="Картинка">
+												</div>
+												<div class="body-orders__img">
+													<img src="img/orders/02.jpg" loading="lazy" alt="Картинка">
+												</div>
+											</div>
+
+										</div>
+									</div>
+
+								</div>
+
+								<div class="personal-content__order-detail order-detail">
+
+									<div class="order-detail__control">
+										<button class="order-detail__back-btn">К списку заказов</button>
+									</div>
+
+									<div class="order-detail__info info-order-detail">
+
+										<div class="order-detail__item item-orders">
+											<div class="item-orders__header">
+
+												<div class="item-orders__numbering numbering-orders">
+													<div class="numbering-orders__number">Заказ №55</div>
+													<div class="numbering-orders__data">от 15 ноября</div>
+												</div>
+
+												<div class="item-orders__prices prices-orders">
+													<div class="prices-orders__price">1 591 р <span class="old-price-card">1
+															615
+														</span>
+													</div>
+													<div class="prices-orders__stickers">
+														<div class="prices-orders__sticker"><span class="sticker _green">Готов к
+																получению</span></div>
+													</div>
+												</div>
+
+											</div>
+											<div class="item-orders__body body-orders">
+
+												<div data-spollers class="body-orders__information information-orders">
+													<button data-spoller type="button"
+														class="information-orders__title _icon-arrow-down">Подробные данные о
+														заказе</button>
+													<form action="#" class="information-orders__body">
+														<div class="body-information">
+															<div class="body-information__column">
+																<div class="body-information__title">Доставка</div>
+
+																<div class="body-information__input Input">
+																	<input name="form[]" autocomplete="off" type="text" id="input"
+																		class="Input-text" placeholder=" " data-error="Заполните поле"
+																		data-required data-validate>
+																	<div class="cut"></div>
+																	<label for="input" class="Input-label">Адрес доставки</label>
+																	<span class="Input__check _icon-check"></span>
+																</div>
+
+																<div class="body-information__input Input">
+																	<input name="form[]" autocomplete="off" type="number" id="input"
+																		class="Input-text" placeholder=" " data-error="Заполните поле"
+																		data-required data-validate>
+																	<div class="cut"></div>
+																	<label for="input" class="Input-label">Индекс</label>
+																	<span class="Input__check _icon-check"></span>
+																</div>
+
+																<div class="body-information__input Input">
+																	<input name="form[]" autocomplete="off" type="text" id="input"
+																		class="Input-text" placeholder=" " data-error="Заполните поле"
+																		data-required data-validate>
+																	<div class="cut"></div>
+																	<label for="input" class="Input-label">Способ оплаты</label>
+																	<span class="Input__check _icon-check"></span>
+																</div>
+
+																<div class="body-information__input Input">
+																	<input name="form[]" autocomplete="off" type="text" id="input"
+																		class="Input-text" placeholder=" " data-error="Заполните поле"
+																		data-required data-validate>
+																	<div class="cut"></div>
+																	<label for="input" class="Input-label">Комментарий</label>
+																	<span class="Input__check _icon-check"></span>
+																</div>
+
+															</div>
+															<div class="body-information__column">
+																<div class="body-information__title">Получатель</div>
+
+
+																<div class="body-information__input Input">
+																	<input name="form[]" autocomplete="off" type="text" id="input"
+																		class="Input-text" placeholder=" " data-error="Заполните поле"
+																		data-required data-validate>
+																	<div class="cut"></div>
+																	<label for="input" class="Input-label">ФИО</label>
+																	<span class="Input__check _icon-check"></span>
+																</div>
+
+																<div class="body-information__input Input">
+																	<input name="form[]" autocomplete="off" type="text" id="input"
+																		class="Input-text" placeholder=" " data-error="Заполните поле"
+																		data-required data-validate>
+																	<div class="cut"></div>
+																	<label for="input" class="Input-label">Email</label>
+																	<span class="Input__check _icon-check"></span>
+																</div>
+
+																<div class="body-information__input Input">
+																	<input name="form[]" autocomplete="off" type="text" id="input"
+																		class="Input-text tel" placeholder=" " data-error="Заполните поле"
+																		data-required data-validate>
+																	<div class="cut"></div>
+																	<label for="input" class="Input-label">Телефон</label>
+																	<span class="Input__check _icon-check"></span>
+																</div>
+
+															</div>
+														</div>
+													</form>
+												</div>
+
+											</div>
+										</div>
+
+										<div class="order-detail__cards cards-order-detail">
+											<div class="cards-order-detail__control">
+												<div class="cards-order-detail__number">2 товара</div>
+												<div class="cards-order-detail__buttons">
+													<button type="button" class="cards-order-detail__button">Повторить
+														заказ</button>
+													<button type="reset" class="cards-order-detail__button">Отменить</button>
+												</div>
+											</div>
+
+											<div class="cards-order-detail__items">
+
+												<div class="cards-order-detail__item item-card-order">
+													<div class="item-card-order__main">
+														<div class="item-card-order__img">
+															<img src="img/card-product/03.jpg" loading="lazy" alt="Картинка">
+														</div>
+														<div class="item-card-order__descp">
+															<div class="item-card-order__descp-header">
+																<div class="item-card-order__article article-card">Арт: 5546885
+																</div>
+																<div class="item-card-order__title">ГЕКСАЦЕМЕНТ (Ласселсбергер)
+																</div>
+															</div>
+															<div class="item-card-order__descp-bottom">
+																<div class="item-card-order__price">Цена за штуку<span>1 039
+																		р</span></div>
+															</div>
+														</div>
+													</div>
+													<div class="item-card-order__total">
+														<div class="item-card-order__total-quantity">1 шт</div>
+														<div class="item-card-order__total-price new-price-card">1 039 р</div>
+														<!-- <div class="item-card-order__total-price-old old-price-card">300 р</div> -->
+													</div>
+												</div>
+
+												<div class="cards-order-detail__item item-card-order">
+													<div class="item-card-order__main">
+														<div class="item-card-order__img">
+															<img src="img/card-product/01.jpg" loading="lazy" alt="Картинка">
+														</div>
+														<div class="item-card-order__descp">
+															<div class="item-card-order__descp-header">
+																<div class="item-card-order__article article-card">Арт: 5546885
+																</div>
+																<div class="item-card-order__title">Сайдинг ДАЧНЫЙ Classic Color
+																	Цикорий, CLASSIC COLOR Ромашка
+																</div>
+															</div>
+															<div class="item-card-order__descp-bottom">
+																<div class="item-card-order__price">Цена за штуку<span>276
+																		р</span></div>
+															</div>
+														</div>
+													</div>
+													<div class="item-card-order__total">
+														<div class="item-card-order__total-quantity">1 шт</div>
+														<div class="item-card-order__total-price new-price-card">276 р</div>
+														<div class="item-card-order__total-price-old old-price-card">300 р</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+									</div>
+
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+			</section>
+
+
+
+			@@include('html/components/_order-call.htm',{})
+
+		</main>
+		@@include('html/_footer.htm',{})
+		@@include('sprite.svg',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

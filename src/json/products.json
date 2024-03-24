@@ -1,0 +1,43 @@
+{
+	"products": [
+		{
+			"id": 10,
+			"trigger": "gallery-10",
+			"url": "card-detail.html",
+			"image": "01.jpg",
+			"title": "Панель МДФ СОЮЗ 'Классик' Ясень Перламутр 2600/238/6 8шт/уп",
+			"size": "1285х192х8",
+			"vendorCode": "5546885",
+			"price": "276.00",
+			"priceOld": "1200.00",
+			"sticker": "Распродажа",
+			"stickerQuantity": "52"
+		},
+		{
+			"id": 11,
+			"trigger": "gallery-11",
+			"url": "card-detail.html",
+			"image": "02.jpg",
+			"title": "Tecos Ardennes — Корабельный брус, голубой",
+			"size": "1085х352х5",
+			"vendorCode": "5356385",
+			"price": "558.00",
+			"priceOld": "1025.00",
+			"sticker": "Распродажа",
+			"stickerQuantity": "38"
+		},
+		{
+			"id": 12,
+			"trigger": "gallery-12",
+			"url": "card-detail.html",
+			"image": "03.jpg",
+			"title": "Scarlett",
+			"size": "1285х192х8",
+			"vendorCode": "5203815",
+			"price": "623.00",
+			"priceOld": "1671.00",
+			"sticker": "Распродажа",
+			"stickerQuantity": "25"
+		}
+	]
+}

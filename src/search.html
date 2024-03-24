@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Поиск"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page page-products">
+
+			<div class="page__header">
+				<div class="page__container">
+
+					<nav class="breadcrumbs">
+						<ul class="breadcrumbs__list">
+							<li class="breadcrumbs__item">
+								<a href="home.html" class="breadcrumbs__link">Главная</a>
+							</li>
+							<li class="breadcrumbs__item">
+								<span class="breadcrumbs__current">Результаты
+									поиска</span>
+							</li>
+						</ul>
+					</nav>
+
+				</div>
+			</div>
+
+			<section class="page-products__products-group products-group">
+				<div class="products-group__container">
+
+					<div class="products-group__title-block title-block">
+						<div class="title-block__title">
+							<h1>Результаты поиска</h1>
+							<div class="title-block__subtitle">По запросу <span>“Плитка”</span> найдено: 137 товаров</div>
+						</div>
+						<!-- <span class="title-block__sticker sticker _grey">635 товаров</span> -->
+					</div>
+
+				</div>
+			</section>
+
+			<section class="catalog">
+				<div class="catalog__container">
+
+					<div class="catalog__body">
+
+						<sidebar class="catalog__sidebar sidebar">
+							<div class="catalog__filter filter-catalog sticky">
+								<div class="filter-catalog__header header-filter">
+									<div class="header-filter__title">Фильтры</div>
+									<button type="button" class="header-filter__btn mob-filter-cl _icon-close"></button>
+								</div>
+								<div data-spollers class="filter-catalog__action">
+
+									<div class="filter-catalog__item item-filter-catalog item-filter-catalog_category">
+										<button type="button" class="item-filter-catalog__title">Категории</button>
+										<div class="item-filter-catalog__body">
+
+											<label for="check-1c" class="checkbox">
+												<input id="check-1c" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1"
+													name="form[]">
+												<span class="checkbox__text"><span>Для ванной
+														<span class="checkbox__value">64</span></span></span>
+											</label>
+
+											<label for="check-2c" class="checkbox">
+												<input id="check-2c" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1"
+													name="form[]">
+												<span class="checkbox__text"><span>Для кухни
+														<span class="checkbox__value">73</span></span></span>
+											</label>
+
+											<label for="check-3c" class="checkbox">
+												<input id="check-3c" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1"
+													name="form[]">
+												<span class="checkbox__text"><span>Напольная плитка
+														<span class="checkbox__value">48</span></span></span>
+											</label>
+
+											<label for="check-4c" class="checkbox">
+												<input id="check-4c" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1"
+													name="form[]">
+												<span class="checkbox__text"><span>Керамогранит
+														<span class="checkbox__value">27</span></span></span>
+											</label>
+
+											<label for="check-5c" class="checkbox">
+												<input id="check-5c" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1"
+													name="form[]">
+												<span class="checkbox__text"><span>Сухие смеси
+														<span class="checkbox__value">11</span></span></span>
+											</label>
+
+										</div>
+									</div>
+
+									<div class="filter-catalog__item item-filter-catalog">
+										<button data-spoller type="button" class="item-filter-catalog__title _icon-arrow-down">Цена</button>
+										<div class="item-filter-catalog__body">
+
+											<div class="filter-catalog__price price-filter">
+												<div data-range class="price-filter__body">
+													<div data-range-item class="price-filter__range"></div>
+													<div class="price-filter__inputs">
+														<label class="price-filter__input-label">
+															<div class="price-filter__input-text">От</div>
+															<input data-range-from="0" autocomplete="off" type="text" name="form[]" value="500"
+																class="price-filter__input">
+														</label>
+
+														<label class="price-filter__input-label">
+															<div class="price-filter__input-text">До</div>
+															<input data-range-to="50000" autocomplete="off" type="text" name="form[]" value="50000"
+																class="price-filter__input">
+														</label>
+													</div>
+
+												</div>
+											</div>
+
+										</div>
+									</div>
+
+									<div class="filter-catalog__item item-filter-catalog">
+										<button data-spoller type="button"
+											class="item-filter-catalog__title _icon-arrow-down">Производитель</button>
+										<div class="item-filter-catalog__body">
+
+											<label for="check-1" class="checkbox">
+												<input id="check-1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1"
+													name="form[]">
+												<span class="checkbox__text"><span>Ласселбергер
+														<span class="checkbox__value">12</span></span></span>
+											</label>
+
+											<label for="check-2" class="checkbox">
+												<input id="check-2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1"
+													name="form[]">
+												<span class="checkbox__text"><span>Церсанит
+														<span class="checkbox__value">24</span></span></span>
+											</label>
+
+											<label for="check-3" class="checkbox">
+												<input id="check-3" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1"
+													name="form[]">
+												<span class="checkbox__text"><span>Березакерамика
+														<span class="checkbox__value">6</span></span></span>
+											</label>
+
+											<label for="check-4" class="checkbox">
+												<input id="check-4" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1"
+													name="form[]">
+												<span class="checkbox__text"><span>Gracia Ceramica
+														<span class="checkbox__value">22</span></span></span>
+											</label>
+
+										</div>
+									</div>
+
+									<div class="filter-catalog__item item-filter-catalog">
+										<button data-spoller type="button" class="item-filter-catalog__title _icon-arrow-down">Страна
+											производства</button>
+										<div class="item-filter-catalog__body">
+
+											<label for="check-5" class="checkbox">
+												<input id="check-5" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1"
+													name="form[]">
+												<span class="checkbox__text"><span>Россия
+														<span class="checkbox__value"></span></span></span>
+											</label>
+
+											<label for="check-6" class="checkbox">
+												<input id="check-6" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1"
+													name="form[]">
+												<span class="checkbox__text"><span>Италия
+														<span class="checkbox__value"></span></span></span>
+											</label>
+
+											<label for="check-6" class="checkbox">
+												<input id="check-6" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1"
+													name="form[]">
+												<span class="checkbox__text"><span>Германия
+														<span class="checkbox__value"></span></span></span>
+											</label>
+
+											<label for="check-7" class="checkbox">
+												<input id="check-7" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1"
+													name="form[]">
+												<span class="checkbox__text"><span>Швейцария
+														<span class="checkbox__value"></span></span></span>
+											</label>
+
+										</div>
+									</div>
+
+									<div class="filter-catalog__item item-filter-catalog">
+										<div class="item-filter-catalog__checks checks-item">
+											<div class="checks-item__name">Только по акции</div>
+											<div class="checks-item__switch-block switch-block">
+												<input type="checkbox" id="toggle-1" class="switch-block__input" />
+												<label for="toggle-1" class="switch-block__label"></label>
+											</div>
+										</div>
+									</div>
+
+									<div class="filter-catalog__item item-filter-catalog">
+										<div class="item-filter-catalog__checks checks-item">
+											<div class="checks-item__name">Только по распродаже</div>
+											<div class="checks-item__switch-block switch-block">
+												<input type="checkbox" id="toggle-2" class="switch-block__input" />
+												<label for="toggle-2" class="switch-block__label"></label>
+											</div>
+										</div>
+									</div>
+
+									<div class="filter-catalog__item item-filter-catalog">
+										<div class="item-filter-catalog__checks checks-item">
+											<div class="checks-item__name">Только новинки</div>
+											<div class="checks-item__switch-block switch-block">
+												<input type="checkbox" id="toggle-3" class="switch-block__input" />
+												<label for="toggle-3" class="switch-block__label"></label>
+											</div>
+										</div>
+									</div>
+
+									<div class="filter-catalog__item item-filter-catalog">
+										<div class="item-filter-catalog__checks checks-item">
+											<div class="checks-item__name">Только хиты</div>
+											<div class="checks-item__switch-block switch-block">
+												<input type="checkbox" id="toggle-4" class="switch-block__input" />
+												<label for="toggle-4" class="switch-block__label"></label>
+											</div>
+										</div>
+									</div>
+
+								</div>
+								<div class="filter-catalog__footer">
+									<button type="submit" class="filter-catalog__btn btn">Применить</button>
+									<button type="reset" class="filter-catalog__btn btn btn_light">Очистить фильтры</button>
+								</div>
+							</div>
+						</sidebar>
+
+						<div class="catalog__content">
+
+							<form action="#" class="products-group__filter filter-products-group">
+
+								<div class="filter-products-group__butons">
+
+									<label type="button" class="filter-products-group__btn btn-products-group">
+										<input class="btn-products-group__input" checked type="radio" name="radio">
+										<span class="btn-products-group__btn">
+											<span class="btn-products-group__name">По популярности</span>
+										</span>
+									</label>
+
+									<label type="button" class="filter-products-group__btn btn-products-group">
+										<input class="btn-products-group__input" type="radio" name="radio">
+										<span class="btn-products-group__btn">
+											<span class="btn-products-group__name">Сначала дешевле</span>
+										</span>
+									</label>
+
+									<label type="button" class="filter-products-group__btn btn-products-group">
+										<input class="btn-products-group__input" type="radio" name="radio">
+										<span class="btn-products-group__btn">
+											<span class="btn-products-group__name">Сначала дороже</span>
+										</span>
+									</label>
+
+									<label type="button" class="filter-products-group__btn btn-products-group">
+										<input class="btn-products-group__input" type="radio" name="radio">
+										<span class="btn-products-group__btn">
+											<span class="btn-products-group__name">По названию</span>
+										</span>
+									</label>
+
+								</div>
+
+								<div class="filter-products-group__control_mob control-products-group">
+									<div class="control-products-group__select">
+										<select name="form[]" class="control">
+											<option value="1" selected="selected">Категории</option>
+											<option value="2">Категории</option>
+											<option value="3">Категории</option>
+											<option value="4">Категории</option>
+											<option value="4">Категории</option>
+										</select>
+									</div>
+									<div class="control-products-group__select">
+										<select name="form[]" class="control">
+											<option value="1" selected="selected">Сначала дешевле</option>
+											<option value="2">По популярности</option>
+											<option value="3">Сначала дешевле</option>
+											<option value="4">Сначала дороже</option>
+											<option value="4">По названию</option>
+										</select>
+									</div>
+								</div>
+
+
+								<div class="filter-products-group__control control-products-group">
+									<div class="control-products-group__name">Товаров на странице:</div>
+									<div class="control-products-group__select">
+										<select name="form[]" class="control">
+											<option value="1" selected="selected">24</option>
+											<option value="2">36</option>
+											<option value="3">42</option>
+											<option value="4">56</option>
+										</select>
+									</div>
+								</div>
+
+								<button type="button" class="filter-products-group__btn-filter btn-filter _icon-filters"></button>
+
+							</form>
+
+							<div class="catalog__products products">
+
+								<!-- <div class="products__column"> -->
+								<div class="card-product">
+									<div class="card-product__image image-card-product swiper">
+										<div class="image-card-product__stikcers-block sticker-block">
+											<span class="sticker _red">-15%<span></span></span>
+										</div>
+										<div class="image-card-product__icons icons-card-product">
+											<button type="button" class="icons-card-product__icon icon-card-product _icon-favorite"></button>
+											<button data-fancybox-trigger="gallery-1" type="button"
+												class="icons-card-product__icon icon-card-product _icon-search-plus"></button>
+										</div>
+										<div class="swiper-wrapper">
+											<a href="card-detail.html" data-fancybox="gallery-1" data-src="img/card-product/08.jpg"
+												class="slider-card-product__slide swiper-slide _ibg">
+												<img src="img/card-product/08.jpg" loading="lazy" alt="Картинка">
+											</a>
+										</div>
+										<div class="image-card-product__dotts"></div>
+									</div>
+									<div class="card-product__body body-card-product">
+										<div class="body-card-product__row">
+											<!-- <div class="body-card-product__item availability-card _color-green">· В наличии
+											</div> -->
+											<div class="body-card-product__item article-card">Арт: 5546885</div>
+										</div>
+										<a href="" class="body-card-product__title">
+											Bianca
+										</a>
+										<!-- <div class="body-card-product__size size-product-card"><span>3660х230 мм</span></div> -->
+										<div class="body-card-product__price price-card-product">
+											<!-- <div class="price-card-product__name">Цена за штуку</div> -->
+											<div class="price-card-product__row">
+												<div class="price-card-product__new-price new-price-card">от 1100 р</div>
+												<div class="price-card-product__old-price old-price-card">1250 р</div>
+											</div>
+										</div>
+									</div>
+									<div class="card-product__actions actions-card-product">
+										<!-- <div class="actions-card-product__bascket-action">
+											<div class="actions-card-product__quantity quantity">
+												<div class="quantity__button quantity__button_minus"></div>
+												<div class="quantity__input">
+													<input autocomplete="off" type="number" name="form[]" value="1">
+												</div>
+												<div class="quantity__button quantity__button_plus"></div>
+											</div>
+											<button type="button" class="actions-card-product__btn-bascket btn _icon-baskcet">В
+												корзину</button>
+										</div> -->
+										<a href="card-detail-2.html" class="actions-card-product__btn btn">Смотреть коллекцию</a>
+									</div>
+								</div>
+								<!-- </div> -->
+
+								<!-- <div class="products__column"> -->
+								<div class="card-product">
+									<div class="card-product__image image-card-product swiper">
+										<div class="image-card-product__stikcers-block sticker-block">
+											<!-- <span class="sticker _red">Распродажа <span>52 шт</span></span> -->
+										</div>
+										<div class="image-card-product__icons icons-card-product">
+											<button type="button" class="icons-card-product__icon icon-card-product _icon-favorite"></button>
+											<button data-fancybox-trigger="gallery-2" type="button"
+												class="icons-card-product__icon icon-card-product _icon-search-plus"></button>
+										</div>
+										<div class="swiper-wrapper">
+											<a data-fancybox="gallery-2" data-src="img/card-product/04.jpg"
+												class="slider-card-product__slide swiper-slide _ibg">
+												<img src="img/card-product/04.jpg" loading="lazy" alt="Картинка">
+											</a>
+										</div>
+										<div class="image-card-product__dotts"></div>
+									</div>
+									<div class="card-product__body body-card-product">
+										<div class="body-card-product__row">
+											<!-- <div class="body-card-product__item availability-card _color-green">· В наличии
+											</div> -->
+											<div class="body-card-product__item article-card">Арт: 5546885</div>
+										</div>
+										<a href="" class="body-card-product__title">
+											Scarlett
+										</a>
+										<!-- <div class="body-card-product__size size-product-card"><span>1285х192х8 мм</span></div> -->
+										<div class="body-card-product__price price-card-product">
+											<!-- <div class="price-card-product__name">Цена за штуку</div> -->
+											<div class="price-card-product__row">
+												<div class="price-card-product__new-price new-price-card">от 1100 р</div>
+												<!-- <div class="price-card-product__old-price old-price-card">1200 р</div> -->
+											</div>
+										</div>
+									</div>
+									<div class="card-product__actions actions-card-product">
+										<!-- <div class="actions-card-product__bascket-action">
+											<div class="actions-card-product__quantity quantity">
+												<div class="quantity__button quantity__button_minus"></div>
+												<div class="quantity__input">
+													<input autocomplete="off" type="number" name="form[]" value="1">
+												</div>
+												<div class="quantity__button quantity__button_plus"></div>
+											</div>
+											<button type="button" class="actions-card-product__btn-bascket btn _icon-baskcet">В
+												корзину</button>
+										</div> -->
+										<a href="card-detail-2.html" class="actions-card-product__btn btn">Смотреть коллекцию</a>
+									</div>
+								</div>
+								<!-- </div> -->
+
+								<!-- <div class="products__column"> -->
+								<div class="card-product">
+									<div class="card-product__image image-card-product swiper">
+										<div class="image-card-product__stikcers-block sticker-block">
+											<!-- <span class="sticker _red">Распродажа <span>52 шт</span></span> -->
+										</div>
+										<div class="image-card-product__icons icons-card-product">
+											<button type="button" class="icons-card-product__icon icon-card-product _icon-favorite"></button>
+											<button data-fancybox-trigger="gallery-3" type="button"
+												class="icons-card-product__icon icon-card-product _icon-search-plus"></button>
+										</div>
+										<div class="swiper-wrapper">
+											<a data-fancybox="gallery-3" data-src="img/card-product/09.jpg"
+												class="slider-card-product__slide swiper-slide _ibg">
+												<img src="img/card-product/09.jpg" loading="lazy" alt="Картинка">
+											</a>
+										</div>
+										<div class="image-card-product__dotts"></div>
+									</div>
+									<div class="card-product__body body-card-product">
+										<div class="body-card-product__row">
+											<!-- <div class="body-card-product__item availability-card _color-green">· В наличии
+											</div> -->
+											<div class="body-card-product__item article-card">Арт: 5546885</div>
+										</div>
+										<a class="body-card-product__title">
+											Celia
+										</a>
+										<!-- <div class="body-card-product__size size-product-card"><span>1285х192х8 мм</span></div> -->
+										<div class="body-card-product__price price-card-product">
+											<!-- <div class="price-card-product__name">Цена за штуку</div> -->
+											<div class="price-card-product__row">
+												<div class="price-card-product__new-price new-price-card">от 1100 р</div>
+												<!-- <div class="price-card-product__old-price old-price-card">300 р</div> -->
+											</div>
+										</div>
+									</div>
+									<div class="card-product__actions actions-card-product">
+										<!-- <div class="actions-card-product__bascket-action">
+											<div class="actions-card-product__quantity quantity">
+												<div class="quantity__button quantity__button_minus"></div>
+												<div class="quantity__input">
+													<input autocomplete="off" type="number" name="form[]" value="1">
+												</div>
+												<div class="quantity__button quantity__button_plus"></div>
+											</div>
+											<button type="button" class="actions-card-product__btn-bascket btn _icon-baskcet">В
+												корзину</button>
+										</div> -->
+										<a href="card-detail-2.html" class="actions-card-product__btn btn">Смотреть коллекцию</a>
+									</div>
+								</div>
+								<!-- </div> -->
+
+								<!-- <div class="products__column"> -->
+								<div class="card-product">
+									<div class="card-product__image image-card-product swiper">
+										<div class="image-card-product__stikcers-block sticker-block">
+											<span class="sticker _red">-15%<span></span></span>
+										</div>
+										<div class="image-card-product__icons icons-card-product">
+											<button type="button" class="icons-card-product__icon icon-card-product _icon-favorite"></button>
+											<button data-fancybox-trigger="gallery-4" type="button"
+												class="icons-card-product__icon icon-card-product _icon-search-plus"></button>
+										</div>
+										<div class="swiper-wrapper">
+											<a data-fancybox="gallery-4" data-src="img/card-product/08.jpg"
+												class="slider-card-product__slide swiper-slide _ibg">
+												<img src="img/card-product/08.jpg" loading="lazy" alt="Картинка">
+											</a>
+										</div>
+										<div class="image-card-product__dotts"></div>
+									</div>
+									<div class="card-product__body body-card-product">
+										<div class="body-card-product__row">
+											<!-- <div class="body-card-product__item availability-card _color-green">· В наличии
+												</div> -->
+											<div class="body-card-product__item article-card">Арт: 5546885</div>
+										</div>
+										<a class="body-card-product__title">
+											Bianca
+										</a>
+										<!-- <div class="body-card-product__size size-product-card"><span>3660х230 мм</span></div> -->
+										<div class="body-card-product__price price-card-product">
+											<!-- <div class="price-card-product__name">Цена за штуку</div> -->
+											<div class="price-card-product__row">
+												<div class="price-card-product__new-price new-price-card">от 1100 р</div>
+												<div class="price-card-product__old-price old-price-card">1250 р</div>
+											</div>
+										</div>
+									</div>
+									<div class="card-product__actions actions-card-product">
+										<!-- <div class="actions-card-product__bascket-action">
+												<div class="actions-card-product__quantity quantity">
+													<div class="quantity__button quantity__button_minus"></div>
+													<div class="quantity__input">
+														<input autocomplete="off" type="number" name="form[]" value="1">
+													</div>
+													<div class="quantity__button quantity__button_plus"></div>
+												</div>
+												<button type="button" class="actions-card-product__btn-bascket btn _icon-baskcet">В
+													корзину</button>
+											</div> -->
+										<a href="card-detail-2.html" class="actions-card-product__btn btn">Смотреть коллекцию</a>
+									</div>
+								</div>
+								<!-- </div> -->
+
+								<!-- <div class="products__column"> -->
+								<div class="card-product">
+									<div class="card-product__image image-card-product swiper">
+										<div class="image-card-product__stikcers-block sticker-block">
+											<!-- <span class="sticker _red">Распродажа <span>52 шт</span></span> -->
+										</div>
+										<div class="image-card-product__icons icons-card-product">
+											<button type="button" class="icons-card-product__icon icon-card-product _icon-favorite"></button>
+											<button data-fancybox-trigger="gallery-5" type="button"
+												class="icons-card-product__icon icon-card-product _icon-search-plus"></button>
+										</div>
+										<div class="swiper-wrapper">
+											<a data-fancybox="gallery-5" data-src="img/card-product/04.jpg"
+												class="slider-card-product__slide swiper-slide _ibg">
+												<img src="img/card-product/04.jpg" loading="lazy" alt="Картинка">
+											</a>
+										</div>
+										<div class="image-card-product__dotts"></div>
+									</div>
+									<div class="card-product__body body-card-product">
+										<div class="body-card-product__row">
+											<!-- <div class="body-card-product__item availability-card _color-green">· В наличии
+												</div> -->
+											<div class="body-card-product__item article-card">Арт: 5546885</div>
+										</div>
+										<a class="body-card-product__title">
+											Scarlett
+										</a>
+										<!-- <div class="body-card-product__size size-product-card"><span>1285х192х8 мм</span></div> -->
+										<div class="body-card-product__price price-card-product">
+											<!-- <div class="price-card-product__name">Цена за штуку</div> -->
+											<div class="price-card-product__row">
+												<div class="price-card-product__new-price new-price-card">от 1100 р</div>
+												<!-- <div class="price-card-product__old-price old-price-card">1200 р</div> -->
+											</div>
+										</div>
+									</div>
+									<div class="card-product__actions actions-card-product">
+										<!-- <div class="actions-card-product__bascket-action">
+												<div class="actions-card-product__quantity quantity">
+													<div class="quantity__button quantity__button_minus"></div>
+													<div class="quantity__input">
+														<input autocomplete="off" type="number" name="form[]" value="1">
+													</div>
+													<div class="quantity__button quantity__button_plus"></div>
+												</div>
+												<button type="button" class="actions-card-product__btn-bascket btn _icon-baskcet">В
+													корзину</button>
+											</div> -->
+										<a href="card-detail-2.html" class="actions-card-product__btn btn">Смотреть коллекцию</a>
+									</div>
+								</div>
+								<!-- </div> -->
+
+								<!-- <div class="products__column"> -->
+								<div class="card-product">
+									<div class="card-product__image image-card-product swiper">
+										<div class="image-card-product__stikcers-block sticker-block">
+											<!-- <span class="sticker _red">Распродажа <span>52 шт</span></span> -->
+										</div>
+										<div class="image-card-product__icons icons-card-product">
+											<button type="button" class="icons-card-product__icon icon-card-product _icon-favorite"></button>
+											<button data-fancybox-trigger="gallery-6" type="button"
+												class="icons-card-product__icon icon-card-product _icon-search-plus"></button>
+										</div>
+										<div class="swiper-wrapper">
+											<a data-fancybox="gallery-6" data-src="img/card-product/09.jpg"
+												class="slider-card-product__slide swiper-slide _ibg">
+												<img src="img/card-product/09.jpg" loading="lazy" alt="Картинка">
+											</a>
+										</div>
+										<div class="image-card-product__dotts"></div>
+									</div>
+									<div class="card-product__body body-card-product">
+										<div class="body-card-product__row">
+											<!-- <div class="body-card-product__item availability-card _color-green">· В наличии
+												</div> -->
+											<div class="body-card-product__item article-card">Арт: 5546885</div>
+										</div>
+										<a class="body-card-product__title">
+											Celia
+										</a>
+										<!-- <div class="body-card-product__size size-product-card"><span>1285х192х8 мм</span></div> -->
+										<div class="body-card-product__price price-card-product">
+											<!-- <div class="price-card-product__name">Цена за штуку</div> -->
+											<div class="price-card-product__row">
+												<div class="price-card-product__new-price new-price-card">от 1100 р</div>
+												<!-- <div class="price-card-product__old-price old-price-card">300 р</div> -->
+											</div>
+										</div>
+									</div>
+									<div class="card-product__actions actions-card-product">
+										<!-- <div class="actions-card-product__bascket-action">
+												<div class="actions-card-product__quantity quantity">
+													<div class="quantity__button quantity__button_minus"></div>
+													<div class="quantity__input">
+														<input autocomplete="off" type="number" name="form[]" value="1">
+													</div>
+													<div class="quantity__button quantity__button_plus"></div>
+												</div>
+												<button type="button" class="actions-card-product__btn-bascket btn _icon-baskcet">В
+													корзину</button>
+											</div> -->
+										<a href="card-detail-2.html" class="actions-card-product__btn btn">Смотреть коллекцию</a>
+									</div>
+								</div>
+								<!-- </div> -->
+
+								<!-- <div class="products__column"> -->
+								<div class="card-product">
+									<div class="card-product__image image-card-product swiper">
+										<div class="image-card-product__stikcers-block sticker-block">
+											<span class="sticker _red">-15%<span></span></span>
+										</div>
+										<div class="image-card-product__icons icons-card-product">
+											<button type="button" class="icons-card-product__icon icon-card-product _icon-favorite"></button>
+											<button data-fancybox-trigger="gallery-7" type="button"
+												class="icons-card-product__icon icon-card-product _icon-search-plus"></button>
+										</div>
+										<div class="swiper-wrapper">
+											<a data-fancybox="gallery-7" data-src="img/card-product/08.jpg"
+												class="slider-card-product__slide swiper-slide _ibg">
+												<img src="img/card-product/08.jpg" loading="lazy" alt="Картинка">
+											</a>
+										</div>
+										<div class="image-card-product__dotts"></div>
+									</div>
+									<div class="card-product__body body-card-product">
+										<div class="body-card-product__row">
+											<!-- <div class="body-card-product__item availability-card _color-green">· В наличии
+												</div> -->
+											<div class="body-card-product__item article-card">Арт: 5546885</div>
+										</div>
+										<a class="body-card-product__title">
+											Bianca
+										</a>
+										<!-- <div class="body-card-product__size size-product-card"><span>3660х230 мм</span></div> -->
+										<div class="body-card-product__price price-card-product">
+											<!-- <div class="price-card-product__name">Цена за штуку</div> -->
+											<div class="price-card-product__row">
+												<div class="price-card-product__new-price new-price-card">от 1100 р</div>
+												<div class="price-card-product__old-price old-price-card">1250 р</div>
+											</div>
+										</div>
+									</div>
+									<div class="card-product__actions actions-card-product">
+										<!-- <div class="actions-card-product__bascket-action">
+												<div class="actions-card-product__quantity quantity">
+													<div class="quantity__button quantity__button_minus"></div>
+													<div class="quantity__input">
+														<input autocomplete="off" type="number" name="form[]" value="1">
+													</div>
+													<div class="quantity__button quantity__button_plus"></div>
+												</div>
+												<button type="button" class="actions-card-product__btn-bascket btn _icon-baskcet">В
+													корзину</button>
+											</div> -->
+										<a href="card-detail-2.html" class="actions-card-product__btn btn">Смотреть коллекцию</a>
+									</div>
+								</div>
+								<!-- </div> -->
+
+								<!-- <div class="products__column"> -->
+								<div class="card-product">
+									<div class="card-product__image image-card-product swiper">
+										<div class="image-card-product__stikcers-block sticker-block">
+											<!-- <span class="sticker _red">Распродажа <span>52 шт</span></span> -->
+										</div>
+										<div class="image-card-product__icons icons-card-product">
+											<button type="button" class="icons-card-product__icon icon-card-product _icon-favorite"></button>
+											<button data-fancybox-trigger="gallery-8" type="button"
+												class="icons-card-product__icon icon-card-product _icon-search-plus"></button>
+										</div>
+										<div class="swiper-wrapper">
+											<a data-fancybox="gallery-8" data-src="img/card-product/04.jpg"
+												class="slider-card-product__slide swiper-slide _ibg">
+												<img src="img/card-product/04.jpg" loading="lazy" alt="Картинка">
+											</a>
+										</div>
+										<div class="image-card-product__dotts"></div>
+									</div>
+									<div class="card-product__body body-card-product">
+										<div class="body-card-product__row">
+											<!-- <div class="body-card-product__item availability-card _color-green">· В наличии
+												</div> -->
+											<div class="body-card-product__item article-card">Арт: 5546885</div>
+										</div>
+										<a class="body-card-product__title">
+											Scarlett
+										</a>
+										<!-- <div class="body-card-product__size size-product-card"><span>1285х192х8 мм</span></div> -->
+										<div class="body-card-product__price price-card-product">
+											<!-- <div class="price-card-product__name">Цена за штуку</div> -->
+											<div class="price-card-product__row">
+												<div class="price-card-product__new-price new-price-card">от 1100 р</div>
+												<!-- <div class="price-card-product__old-price old-price-card">1200 р</div> -->
+											</div>
+										</div>
+									</div>
+									<div class="card-product__actions actions-card-product">
+										<!-- <div class="actions-card-product__bascket-action">
+												<div class="actions-card-product__quantity quantity">
+													<div class="quantity__button quantity__button_minus"></div>
+													<div class="quantity__input">
+														<input autocomplete="off" type="number" name="form[]" value="1">
+													</div>
+													<div class="quantity__button quantity__button_plus"></div>
+												</div>
+												<button type="button" class="actions-card-product__btn-bascket btn _icon-baskcet">В
+													корзину</button>
+											</div> -->
+										<a href="card-detail-2.html" class="actions-card-product__btn btn">Смотреть коллекцию</a>
+									</div>
+								</div>
+								<!-- </div> -->
+
+								<!-- <div class="products__column"> -->
+								<div class="card-product">
+									<div class="card-product__image image-card-product swiper">
+										<div class="image-card-product__stikcers-block sticker-block">
+											<!-- <span class="sticker _red">Распродажа <span>52 шт</span></span> -->
+										</div>
+										<div class="image-card-product__icons icons-card-product">
+											<button type="button" class="icons-card-product__icon icon-card-product _icon-favorite"></button>
+											<button data-fancybox-trigger="gallery-9" type="button"
+												class="icons-card-product__icon icon-card-product _icon-search-plus"></button>
+										</div>
+										<div class="swiper-wrapper">
+											<a data-fancybox="gallery-9" data-src="img/card-product/09.jpg"
+												class="slider-card-product__slide swiper-slide _ibg">
+												<img src="img/card-product/09.jpg" loading="lazy" alt="Картинка">
+											</a>
+										</div>
+										<div class="image-card-product__dotts"></div>
+									</div>
+									<div class="card-product__body body-card-product">
+										<div class="body-card-product__row">
+											<!-- <div class="body-card-product__item availability-card _color-green">· В наличии
+												</div> -->
+											<div class="body-card-product__item article-card">Арт: 5546885</div>
+										</div>
+										<a class="body-card-product__title">
+											Celia
+										</a>
+										<!-- <div class="body-card-product__size size-product-card"><span>1285х192х8 мм</span></div> -->
+										<div class="body-card-product__price price-card-product">
+											<!-- <div class="price-card-product__name">Цена за штуку</div> -->
+											<div class="price-card-product__row">
+												<div class="price-card-product__new-price new-price-card">от 1100 р</div>
+												<!-- <div class="price-card-product__old-price old-price-card">300 р</div> -->
+											</div>
+										</div>
+									</div>
+									<div class="card-product__actions actions-card-product">
+										<!-- <div class="actions-card-product__bascket-action">
+												<div class="actions-card-product__quantity quantity">
+													<div class="quantity__button quantity__button_minus"></div>
+													<div class="quantity__input">
+														<input autocomplete="off" type="number" name="form[]" value="1">
+													</div>
+													<div class="quantity__button quantity__button_plus"></div>
+												</div>
+												<button type="button" class="actions-card-product__btn-bascket btn _icon-baskcet">В
+													корзину</button>
+											</div> -->
+										<a href="card-detail-2.html" class="actions-card-product__btn btn">Смотреть коллекцию</a>
+									</div>
+								</div>
+								<!-- </div> -->
+
+							</div>
+
+							<button class="page-products__show-more show-more-btn btn">Показать ещё</button>
+
+							<div class="page__pagging pagging">
+								<a href="" class="pagging__arrow _icon-arrow-sl-left"></a>
+								<ul class="pagging__list">
+									<li>
+										<a href="" class="pagging__item _active">1</a>
+									</li>
+									<li>
+										<a href="" class="pagging__item">2</a>
+									</li>
+									<li>
+										<a href="" class="pagging__item">3</a>
+									</li>
+									<li>
+										<a href="" class="pagging__item">4</a>
+									</li>
+									<li>
+										<a href="" class="pagging__item">5</a>
+									</li>
+									<li>
+										<a class="pagging__item">...</a>
+									</li>
+									<li>
+										<a href="" class="pagging__item">61</a>
+									</li>
+								</ul>
+								<a href="" class="pagging__arrow _icon-arrow-sl-right"></a>
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+			</section>
+
+			@@include('html/components/_order-call.htm',{})
+
+		</main>
+		@@include('html/_footer.htm',{})
+		@@include('sprite.svg',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

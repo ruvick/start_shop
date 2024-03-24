@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Доставка"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page page-template">
+
+			<div class="page__header">
+				<div class="page__container">
+
+					<nav class="breadcrumbs">
+						<ul class="breadcrumbs__list">
+							<li class="breadcrumbs__item">
+								<a href="home.html" class="breadcrumbs__link">Главная</a>
+							</li>
+							<li class="breadcrumbs__item">
+								<span class="breadcrumbs__current">Доставка</span>
+							</li>
+						</ul>
+					</nav>
+
+					<div class="page__title-block title-block">
+						<div class="title-block__title">
+							<h1>Доставка</h1>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<section class="page__template template">
+				<div class="template__container">
+
+					<div class="template__main main-template">
+
+						<sidebar class="main-template__sidebar sidebar-template">
+							<div class="sidebar-template__body">
+								<nav class="tabs__navigation">
+									<a href="order.html" class="tabs__title _icon-arrow-big-right">Оплата</a>
+									<a href="delivery.html" class="tabs__title _icon-arrow-big-right _tab-active">Доставка</a>
+								</nav>
+							</div>
+						</sidebar>
+
+						<div class="main-template__body">
+							<div class="content">
+
+								<p>
+									Для осуществления доставки необходимо при оформлении заказа выбрать «Доставка курьером»
+									и далее, в блоке «Покупатель» указать адрес доставки. После заявки на доставку с вами
+									свяжется оператор, который согласует сроки и стоимость доставки, после чего можете
+									произвести оплату своего заказа. Дополнительно, в день доставки вам позвонит водитель
+									за час до разгрузки.
+								</p>
+
+								<p>
+									Доставка осуществляется силами грузового такси. Время доставки с 14.00 до 18.00. Оплата
+									осуществляется наличными водителю по завершению доставки. Ориентировочная стоимость
+									550 рублей в черте города Курска при максимальной загрузке не более 1,5 тонн,
+									за городом дополнительно 36 рублей за километр от знака окончания города.
+								</p>
+								<p>
+									<span class="_color-red">Внимание!</span> «Подъем/занос товара на этаж», «Разгрузка
+									и пронос товара»,
+									«Подача товара
+									с борта» не включены в стоимость доставки и не осуществляются. Позаботьтесь заранее
+									об организации разгрузочных работ!
+								</p>
+
+								<p>
+									Отменить или перенести доставку возможно, позвонив по номеру магазина -
+									+7 4712 39-07-37. Перенос времени и даты доставки возможен, если вы связались
+									со специалистом не позднее 14:00 дня, предшествующего согласованной ранедате доставки.
+								</p>
+
+								<img src="img/content/03.png" loading="lazy" alt="Картинка">
+
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+			</section>
+
+
+
+			@@include('html/components/_order-call.htm',{})
+
+		</main>
+		@@include('html/_footer.htm',{})
+		@@include('sprite.svg',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

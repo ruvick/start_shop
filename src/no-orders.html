@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Личный кабинет - Нет заказов"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page page-template">
+
+			<div class="page__header">
+				<div class="page__container">
+
+					<nav class="breadcrumbs">
+						<ul class="breadcrumbs__list">
+							<li class="breadcrumbs__item">
+								<a href="home.html" class="breadcrumbs__link">Главная</a>
+							</li>
+							<li class="breadcrumbs__item">
+								<span class="breadcrumbs__current">Личный
+									кабинет</span>
+							</li>
+						</ul>
+					</nav>
+
+					<div class="page__title-block title-block">
+						<div class="title-block__title">
+							<h1>Личный кабинет</h1>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<section class="page__template template">
+				<div class="template__container">
+
+					<div class="template__main main-template">
+
+						<sidebar class="main-template__sidebar sidebar-template">
+							<div class="sidebar-template__body">
+								<div class="personal-navigation">
+									<div class="personal-navigation__header header-personal-navigation">
+										<div class="header-personal-navigation__title">Личный кабинет</div>
+										<button type="button" class="header-personal-navigation__btn _icon-close"></button>
+									</div>
+									<nav class="tabs__navigation">
+										<a href="personal-data.html" class="tabs__title _icon-arrow-big-right">Личные
+											данные</a>
+										<a href="current-orders.html" class="tabs__title _icon-arrow-big-right">Текущие заказы</a>
+										<a href="no-orders.html" class="tabs__title _icon-arrow-big-right _tab-active">Нет
+											заказов</a>
+										<a href="order-history.html" class="tabs__title _icon-arrow-big-right">История заказов</a>
+										<a href="change-password.html" class="tabs__title _icon-arrow-big-right">Сменить
+											пароль</a>
+										<a href="" class="tabs__title tabs__title_link">Выйти</a>
+									</nav>
+								</div>
+							</div>
+						</sidebar>
+
+						<div class="main-template__body">
+
+							<div class="template__empty empty-template">
+
+								<div class="empty-template__body">
+									<div class="empty-template__image">
+									</div>
+									<div class="empty-template__title">
+										<h2>У вас пока нет ни одного заказа</h2>
+									</div>
+									<div class="empty-template__subtitle">Самое время выбрать подходящие товары
+									</div>
+									<a href="catalog-main.html" class="empty-template__link btn">Перейти в каталог</a>
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+			</section>
+
+
+
+			@@include('html/components/_order-call.htm',{})
+
+		</main>
+		@@include('html/_footer.htm',{})
+		@@include('sprite.svg',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

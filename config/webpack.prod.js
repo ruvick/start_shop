@@ -2,6 +2,7 @@ import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import FileIncludeWebpackPlugin from 'file-include-webpack-plugin-replace';
 import CopyPlugin from "copy-webpack-plugin";
 import TerserPlugin from "terser-webpack-plugin";
+import RemoveEmptyScriptsPlugin from 'webpack-remove-empty-scripts';
 import fs from 'fs';
 import * as path from 'path';
 
@@ -32,19 +33,23 @@ const config = {
         main: [`${paths.src}/js/app.js`, ...mainFiles]
     },
     optimization: {
-        minimize: true,
+        minimize: false,
         minimizer: [
             new TerserPlugin({
-                include: /vendor/,
-                exclude: /main/,
+                terserOptions: {
+                    format: {
+                        comments: false,
+                    },
+                },
+                extractComments: false,
             }),
         ],
     },
-		output: {
-			path: path.join(paths.build, 'js'),
-			filename: '[name].min.js',
-			publicPath: '/js/',
-	},
+    output: {
+        path: path.join(paths.build, 'js'),
+        filename: '[name].min.js',
+        publicPath: '/js/',
+    },
     module: {
         rules: [
             {
@@ -88,6 +93,7 @@ const config = {
         ],
     },
     plugins: [
+        new RemoveEmptyScriptsPlugin(),
         new FileIncludeWebpackPlugin({
             source: srcFolder,
             destination: '../',
